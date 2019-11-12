@@ -63,6 +63,7 @@ default_category: TyporaNote
 category_map:
 tag_map:
 
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
@@ -92,8 +93,14 @@ ignore:
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 theme: next
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+type: git
+repository: https://github.com/EvilicLufas/EvilicLufas.github.io.git
+branch: master
