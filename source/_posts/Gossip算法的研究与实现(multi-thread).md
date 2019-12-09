@@ -1,3 +1,7 @@
+---
+title: Gossip算法的研究与实现(Multi-thread using Java)
+---
+
 # Gossip算法的研究与实现(Multi-thread using Java)
 
 [TOC]
