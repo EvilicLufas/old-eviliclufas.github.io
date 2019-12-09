@@ -77,8 +77,11 @@ theme: next                                # 默认主题landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:                                         # 定义部署
-  type:
+deploy:
+  type: git
+  repo: https://github.com/EvilicLufas/eviliclufas.github.io
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
 
 ## Hexo Configuration
 ### Docs: https://hexo.io/docs/configuration.html

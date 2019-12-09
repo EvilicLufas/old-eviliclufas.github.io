@@ -1,3 +1,7 @@
+---
+title: How to train your Deep Neural Network
+---
+
 # How to train your Deep Neural Network
 
 Jan 5, 2017
