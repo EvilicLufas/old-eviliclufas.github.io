@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3193082-94d5-446d-91b5-277f71e9faa3" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/themes/next/source/images/chloe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/_config.yml" afterDir="false" />
@@ -42,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1356" />
     <option name="y" value="-12" />
     <option name="width" value="1394" />
@@ -163,15 +164,15 @@
       <workItem from="1573545032153" duration="640000" />
       <workItem from="1575034679359" duration="698000" />
       <workItem from="1575281989036" duration="3803000" />
-      <workItem from="1575826662062" duration="2402000" />
+      <workItem from="1575826662062" duration="2738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9270000" />
+    <option name="totallyTimeSpent" value="9606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="7" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.266171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
