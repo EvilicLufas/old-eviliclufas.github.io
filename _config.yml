@@ -79,9 +79,11 @@ theme: next                                # 默认主题landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/EvilicLufas/eviliclufas.github.io
+#  repo: https://github.com/EvilicLufas/eviliclufas.github.io
+  repo: root@111.229.96.119:/home/git/blog.git
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
+#  branch: gh-pages
+  branch: master
 
 ## Hexo Configuration
 ### Docs: https://hexo.io/docs/configuration.html
