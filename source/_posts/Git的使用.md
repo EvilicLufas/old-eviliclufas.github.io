@@ -12,13 +12,13 @@ title: Git的使用
 
 并且设置为**优先使用相关路径**（负责在Github中Typora仍然无法顺利显示图片）
 
-> ###### ![1570787625890](Git的使用.assets/1570787625890.png)
+> ###### ![1570787625890](./Git的使用.assets/1570787625890.png)
 
 ##### 2.在整个存放TyporaNote与Assets的文件夹外建立git
 
 安装git之后右键文件夹打开git bash here
 
-![1570785291509](Git的使用.assets/1570785291509.png)
+![1570785291509](./Git的使用.assets/1570785291509.png)
 
 使用git时,先设置
 
@@ -37,7 +37,7 @@ title: Git的使用
 
 ##### 3.在github建立新仓库
 
-![1570785378922](Git的使用.assets/1570785378922.png)
+![1570785378922](./Git的使用.assets/1570785378922.png)
 
 >```python
 >git remote add origin https://github.com/EvilicLufas/TyporaAssets.git
@@ -46,7 +46,7 @@ title: Git的使用
 
 至此你的Typora笔记以及Assets文件夹都已经上传到了github的仓库里
 
-![1570785581460](Git的使用.assets/1570785581460.png)
+![1570785581460](./Git的使用.assets/1570785581460.png)
 
 ##### 4.该过程中可能出现的问题（在Github创建库时不要选择创建readme）
 
@@ -90,7 +90,7 @@ title: Git的使用
 
 ##### 5.git init 之后选择隐藏的项目 才能看到.git文件夹
 
-> ![1570785929130](Git的使用.assets/1570785929130.png)
+> ![1570785929130](./Git的使用.assets/1570785929130.png)
 
 ## II. 使用Git更新项目到本地仓库
 

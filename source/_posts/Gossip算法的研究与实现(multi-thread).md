@@ -72,9 +72,9 @@ title: Gossip算法的研究与实现(Multi-thread using Java)
 
 ##### 2.6 时间复杂度 logN 的证明
 
-![1570799966173](Gossip算法的研究与实现(multi-thread).assets/1570799966173.png)
+![1570799966173](./Gossip算法的研究与实现(multi-thread).assets/1570799966173.png)
 
-![1570799985330](Gossip算法的研究与实现(multi-thread).assets/1570799985330.png)
+![1570799985330](./Gossip算法的研究与实现(multi-thread).assets/1570799985330.png)
 
 ##### 2.7 算法具体描述
 ###### 2.7.1 gossip 协议的类型
@@ -517,25 +517,25 @@ public class GossipingMultiThread {
 
 ###### 3.1 Console控制台输出展示
 
-![1571926475885](Gossip算法的研究与实现(multi-thread).assets/1571926475885.png)
+![1571926475885](./Gossip算法的研究与实现(multi-thread).assets/1571926475885.png)
 
 ###### 3.2 结果数据打印
 
-![1571926503527](Gossip算法的研究与实现(multi-thread).assets/1571926503527.png)
+![1571926503527](./Gossip算法的研究与实现(multi-thread).assets/1571926503527.png)
 
 #### 4.结果分析
 
-![1571924466380](Gossip算法的研究与实现(multi-thread).assets/1571924466380.png)
+![1571924466380](./Gossip算法的研究与实现(multi-thread).assets/1571924466380.png)
 
-![1571924632284](Gossip算法的研究与实现(multi-thread).assets/1571924632284.png)
+![1571924632284](./Gossip算法的研究与实现(multi-thread).assets/1571924632284.png)
 
-![1571924730193](Gossip算法的研究与实现(multi-thread).assets/1571924730193.png)
+![1571924730193](./Gossip算法的研究与实现(multi-thread).assets/1571924730193.png)
 
 
 
-![1571924850345](Gossip算法的研究与实现(multi-thread).assets/1571924850345.png)
+![1571924850345](./Gossip算法的研究与实现(multi-thread).assets/1571924850345.png)
 
-![1571925811832](Gossip算法的研究与实现(multi-thread).assets/1571925811832.png)
+![1571925811832](./Gossip算法的研究与实现(multi-thread).assets/1571925811832.png)
 
 
 
