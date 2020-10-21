@@ -35,7 +35,7 @@ titlecase: false            # 是否要把标题中的首字符大写
 external_link: true         # 是否要在新开tab中打开外链
 filename_case: 0            # 文件名是否小写敏感
 render_drafts: false        # 是否渲染草稿
-post_asset_folder: false    # 是否启用资源文件夹。如启用，新建文档同时建立同名的资源文件夹
+post_asset_folder: true    # 是否启用资源文件夹。如启用，新建文档同时建立同名的资源文件夹
 relative_link: false        # 是否把站内资源的链接改为站内相对链接。建议关闭。
 future: true                # 文档中指定为未来时间创建
 highlight:
@@ -80,7 +80,8 @@ theme: next                                # 默认主题landscape
 deploy:
   type: git
 #  repo: https://github.com/EvilicLufas/eviliclufas.github.io
-  repo: root@111.229.96.119:/home/git/blog.git
+#  repo: root@111.229.96.119:/home/git/blog.git
+  repo: https://github.com/EvilicLufas/eviliclufas.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
 #  branch: gh-pages
   branch: master
