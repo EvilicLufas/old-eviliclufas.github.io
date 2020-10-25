@@ -1,303 +1,195 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="en">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="How to train your Deep Neural NetworkJan 5, 2017 There are certain practices in Deep Learning that are highly recommended, in order to efficiently train Deep Neural Networks. In this post, I will be c">
-<meta property="og:type" content="article">
-<meta property="og:title" content="How to train your Deep Neural Network">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;How%20to%20train%20your%20Deep%20Neural%20Network&#x2F;index.html">
-<meta property="og:site_name" content="Vellichor Kyst">
-<meta property="og:description" content="How to train your Deep Neural NetworkJan 5, 2017 There are certain practices in Deep Learning that are highly recommended, in order to efficiently train Deep Neural Networks. In this post, I will be c">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-09T06:51:04.000Z">
-<meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mainly record the thoughts &amp; techniques in shool learning &amp; rearch in AI">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+          How to train your Deep Neural Network - Vellichor Kyst 的博客 | Vellichor Kyst&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2019/11/21/How to train your Deep Neural Network/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vellichor Kyst</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
     }
-  };
 </script>
 
 
-
-  <link rel="canonical" href="http://yoursite.com/2019/11/21/How to train your Deep Neural Network/"/>
-
-
-
-
-
-  <title>How to train your Deep Neural Network | Vellichor Kyst</title>
-  
-
-
-
-
-
-
-
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
-  
-  
+    <!-- Main Content -->
     
-  
+<!-- Image to hack wechat -->
+<!-- <img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Vellichor Kyst</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"> </p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/21/How%20to%20train%20your%20Deep%20Neural%20Network/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Vellichor">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Vellichor Kyst">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">How to train your Deep Neural Network</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-21T18:01:57+08:00">
-                2019-11-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>How to train your Deep Neural Network</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Vellichor on
+                        2019-11-21
+                    </span>
+                </div>
+            </div>
         </div>
-      </header>
-    
+    </div>
+</header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-      
-      
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-      
-        <h1 id="How-to-train-your-Deep-Neural-Network"><a href="#How-to-train-your-Deep-Neural-Network" class="headerlink" title="How to train your Deep Neural Network"></a>How to train your Deep Neural Network</h1><p>Jan 5, 2017</p>
+                <h1 id="How-to-train-your-Deep-Neural-Network"><a href="#How-to-train-your-Deep-Neural-Network" class="headerlink" title="How to train your Deep Neural Network"></a>How to train your Deep Neural Network</h1><p>Jan 5, 2017</p>
 <p>There are certain practices in <strong>Deep Learning</strong> that are highly recommended, in order to efficiently train <strong>Deep Neural Networks</strong>. In this post, I will be covering a few of these most commonly used practices, ranging from importance of quality training data, choice of hyperparameters to more general tips for faster prototyping of DNNs. Most of these practices, are validated by the research in academia and industry and are presented with mathematical and experimental proofs in research papers like <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf" target="_blank" rel="noopener">Efficient BackProp(Yann LeCun et al.)</a> and <a href="https://arxiv.org/pdf/1206.5533v2.pdf" target="_blank" rel="noopener">Practical Recommendations for Deep Architectures(Yoshua Bengio)</a>.</p>
 <p>As you’ll notice, I haven’t mentioned any mathematical proofs in this post. All the points suggested here, should be taken more of a summarization of the best practices for training DNNs. For more in-depth understanding, I highly recommend you to go through the above mentioned research papers and references provided at the end.</p>
 <hr>
@@ -309,7 +201,7 @@
 </ul>
 <h3 id="Choose-appropriate-activation-functions"><a href="#Choose-appropriate-activation-functions" class="headerlink" title="Choose appropriate activation functions"></a>Choose appropriate activation functions</h3><p>One of the vital components of any Neural Net are <a href="https://en.wikipedia.org/wiki/Activation_function" target="_blank" rel="noopener">activation functions</a>. <strong>Activations</strong> introduces the much desired <strong>non-linearity</strong> into the model. For years, <code>sigmoid</code> activation functions have been the preferable choice. But, a <code>sigmoid</code> function is inherently cursed by these two drawbacks - 1. Saturation of sigmoids at tails(further causing <a href="https://en.wikipedia.org/wiki/Vanishing_gradient_problem" target="_blank" rel="noopener">vanishing gradient problem</a>). 2. <code>sigmoids</code> are not zero-centered.</p>
 <p>A better alternative is a <code>tanh</code> function - mathematically, <code>tanh</code> is just a rescaled and shifted <code>sigmoid</code>, <code>tanh(x) = 2*sigmoid(x) - 1</code>. Although <code>tanh</code> can still suffer from the <strong>vanishing gradient problem</strong>, but the good news is - <code>tanh</code> is zero-centered. Hence, using <code>tanh</code> as activation function will result into faster convergence. I have found that using <code>tanh</code> as activations generally works better than sigmoid.</p>
-<p>You can further explore other alternatives like <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)" target="_blank" rel="noopener"><code>ReLU</code></a>, <code>SoftSign</code>, etc. depending on the specific task, which have shown to ameliorate some of these issues.</p>
+<p>You can further explore other alternatives like <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks" target="_blank" rel="noopener"><code>ReLU</code></a>), <code>SoftSign</code>, etc. depending on the specific task, which have shown to ameliorate some of these issues.</p>
 <h3 id="Number-of-Hidden-Units-and-Layers"><a href="#Number-of-Hidden-Units-and-Layers" class="headerlink" title="Number of Hidden Units and Layers"></a>Number of Hidden Units and Layers</h3><p>Keeping a larger number of hidden units than the optimal number, is generally a safe bet. Since, any regularization method will take care of superfluous units, at least to some extent. On the other hand, while keeping smaller numbers of hidden units(than the optimal number), there are higher chances of underfitting the model.</p>
 <p>Also, while employing <strong>unsupervised pre-trained representations</strong>(describe in later sections), the optimal number of hidden units are generally kept even larger. Since, pre-trained representation might contain a lot of irrelevant information in these representations(for the specific supervised task). By increasing the number of hidden units, model will have the required flexibility to filter out the most appropriate information out of these pre-trained representations.</p>
 <p>Selecting the optimal number of layers is relatively straight forward. As <a href="https://www.quora.com/profile/Yoshua-Bengio" target="_blank" rel="noopener">@Yoshua-Bengio</a> mentioned on Quora - “You just keep on adding layers, until the test error doesn’t improve anymore”. ;)</p>
@@ -343,366 +235,320 @@
 <h3 id="Use-libraries-with-GPU-and-Automatic-Differentiation-Support"><a href="#Use-libraries-with-GPU-and-Automatic-Differentiation-Support" class="headerlink" title="Use libraries with GPU and Automatic Differentiation Support"></a>Use libraries with GPU and Automatic Differentiation Support</h3><p>Thankfully, for rapid prototyping we have some really descent libraries like <a href="http://deeplearning.net/software/theano/" target="_blank" rel="noopener">Theano</a>, <a href="https://www.tensorflow.org/" target="_blank" rel="noopener">Tensorflow</a>, <a href="https://keras.io/" target="_blank" rel="noopener">Keras</a>, etc. Almost all of these DL libraries provide <strong>support for GPU computation</strong> and <strong>Automatic Differentiation</strong>. So, you don’t have to dive into core GPU programming(unless you want to - it’s definitely fun :)); nor you have to write your own differentiation code, which might get a little bit taxing in really complex models(although you should be able to do that, if required). Tensorflow further provides support for training your models on a <strong>distributed architecture</strong>(if you can afford it).</p>
 <p>This is not at all an exhaustive list of practices, to train a DNN. In order to include just the most common practices, I have tried to exclude a few concepts like Normalization of inputs, Batch/Layer Normalization, Gradient Check, etc. Although feel free to add anything in the comment section and I’ll be more than happy to update it in the post. :)</p>
 
-      
-    </div>
-    
-    
-    
 
-    
+                <hr>
 
-    
+                
 
-    
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/12/18/RASD-Final/" data-toggle="tooltip" data-placement="top" title="RASD Final">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/11/12/Git的使用/" data-toggle="tooltip" data-placement="top" title="Git的使用">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
 
-    <footer class="post-footer">
-      
+                
 
-      
-      
-      
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/11/12/Git%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="Git的使用">
-                <i class="fa fa-chevron-left"></i> Git的使用
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/17/End-to-End%20Machine%20Learning%20with%20TensorFlow%20on%20GCP/" rel="prev" title="End-to-End Machine Learning with TensorFlow on GCP">
-                End-to-End Machine Learning with TensorFlow on GCP <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
-        </div>
+            </div>
+    <!-- Side Catalog Container -->
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
+    <!-- Sidebar Container -->
 
-      
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Vellichor</p>
-              <p class="site-description motion-element" itemprop="description">Mainly record the thoughts & techniques in shool learning & rearch in AI</p>
-          </div>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%20%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
+                    
+                        <li><a href="http://eviliclufas.github.io" target="_blank">Vellichor Kyst&#39;s Blog</a></li>
+                    
+                        <li><a href="https://weibo.com/u/5842059988?from=feed&amp;loc=at&amp;nick=Vellichor%E7%9A%84%E5%B0%9A%E7%A4%BC%E7%A4%BC" target="_blank">Lover : Vellichor的尚礼礼 的微博</a></li>
+                    
+                        <li><a href="https://weibo.com/6558983506/profile?topnav=1&amp;wvr=6" target="_blank">微博 ：Vellichor-Kyst</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                        <li><a href="#" target="_blank">Example Friends</a></li>
+                    
+                        <li><a href="#" target="_blank">It helps SEO</a></li>
+                    
+                </ul>
+                
+            </div>
 
         </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-train-your-Deep-Neural-Network"><span class="nav-number">1.</span> <span class="nav-text">How to train your Deep Neural Network</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-data"><span class="nav-number">1.0.1.</span> <span class="nav-text">Training data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Choose-appropriate-activation-functions"><span class="nav-number">1.0.2.</span> <span class="nav-text">Choose appropriate activation functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Number-of-Hidden-Units-and-Layers"><span class="nav-number">1.0.3.</span> <span class="nav-text">Number of Hidden Units and Layers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Weight-Initialization"><span class="nav-number">1.0.4.</span> <span class="nav-text">Weight Initialization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-Rates"><span class="nav-number">1.0.5.</span> <span class="nav-text">Learning Rates</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hyperparameter-Tuning-Shun-Grid-Search-Embrace-Random-Search"><span class="nav-number">1.0.6.</span> <span class="nav-text">Hyperparameter Tuning: Shun Grid Search - Embrace Random Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-Methods"><span class="nav-number">1.0.7.</span> <span class="nav-text">Learning Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Keep-dimensions-of-weights-in-the-exponential-power-of-2"><span class="nav-number">1.0.8.</span> <span class="nav-text">Keep dimensions of weights in the exponential power of 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unsupervised-Pretraining"><span class="nav-number">1.0.9.</span> <span class="nav-text">Unsupervised Pretraining</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mini-Batch-vs-Stochastic-Learning"><span class="nav-number">1.0.10.</span> <span class="nav-text">Mini-Batch vs. Stochastic Learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shuffling-training-examples"><span class="nav-number">1.0.11.</span> <span class="nav-text">Shuffling training examples</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dropout-for-Regularization"><span class="nav-number">1.0.12.</span> <span class="nav-text">Dropout for Regularization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Number-of-Epochs-Training-Iterations"><span class="nav-number">1.0.13.</span> <span class="nav-text">Number of Epochs/Training Iterations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Visualize"><span class="nav-number">1.0.14.</span> <span class="nav-text">Visualize</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multi-Core-machines-GPUs"><span class="nav-number">1.0.15.</span> <span class="nav-text">Multi-Core machines, GPUs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Use-libraries-with-GPU-and-Automatic-Differentiation-Support"><span class="nav-number">1.0.16.</span> <span class="nav-text">Use libraries with GPU and Automatic Differentiation Support</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
     </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Vellichor</span>
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+</article>
 
 
 
 
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "hexo-theme-huxblog";
+    var disqus_identifier = "http://yoursite.com/2019/11/21/How to train your Deep Neural Network/";
+    var disqus_url = "http://yoursite.com/2019/11/21/How to train your Deep Neural Network/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/Vellichor-Kyst">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/EvilicLufas">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/GAO GE">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Vellichor Kyst 2020 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
 </script>
 
 
 
 
+<!-- Baidu Tongji -->
 
+<script>
+    // dynamic User by Hux
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 
+<!-- Side Catalog -->
 
-  
 
 
-  
 
 
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
+
 </html>

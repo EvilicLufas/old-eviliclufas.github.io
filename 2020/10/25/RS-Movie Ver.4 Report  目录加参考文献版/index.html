@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mainly record the thoughts &amp; techniques in shool learning &amp; rearch in AI">
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+          Vellichor Kyst 的博客 | Vellichor Kyst&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2020/10/25/RS-Movie Ver.4 Report  目录加参考文献版/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vellichor Kyst</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1></h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by Vellichor on
+                        2020-10-25
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="RS-Movie-Team-Report"><a href="#RS-Movie-Team-Report" class="headerlink" title="RS-Movie Team Report"></a>RS-Movie Team Report</h1><h3 id="Work-Distribution"><a href="#Work-Distribution" class="headerlink" title="Work Distribution"></a>Work Distribution</h3><table>
+<thead>
+<tr>
+<th>Team member</th>
+<th>肖斌（leader）20175308</th>
+<th>高歌   20175045</th>
+<th>汪禹霖20175226</th>
+<th>林伟立20175347</th>
+<th>叶方扬20175356</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Work Distributed</td>
+<td>1.Data   pre-processing   and collection                   2. System   Deployment   Plan   3.presentation (Ch II,VI)</td>
+<td>1. Data collecting and  database design        2.    Algorithm model design and training    (Ch II,III,IV)</td>
+<td>Service   interface design and  UI design (Ch VII )</td>
+<td>Analyzes the project and writes  project plan (Ch I)</td>
+<td>1. System   Architecture design   2. User   guides   (Ch V,VII)</td>
+</tr>
+<tr>
+<td>Contribution ratio</td>
+<td>20%</td>
+<td>20%</td>
+<td>20%</td>
+<td>20%</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+<p>[TOC]</p>
+<h1 id="Ch-I-Project-Plan"><a href="#Ch-I-Project-Plan" class="headerlink" title="Ch I . Project Plan"></a>Ch I . Project Plan</h1><h3 id="1-introduction"><a href="#1-introduction" class="headerlink" title="1. introduction"></a>1. introduction</h3><h4 id="1-1-project"><a href="#1-1-project" class="headerlink" title="1.1 project"></a>1.1 project</h4><p>Based on the study, users may not be able to find movies they are really interested most of the time, even if they are given a large number of movies and are classified according to factors such as the type, year, and origin of the film.</p>
+<p>There are many problems in the traditional mode of searching movies, among which the most important and profound problem is the problem of information overload. Users can not get the information that is really useful to them. For example, each action of searching for a movie is independent of each other, unable to make effective use of the previous movie viewing records and search records of users, and not fully combined with the habits of users; every search for a movie must be accurately searched, the search method is too mechanized, the search results must be strongly related to the keywords used for searching, resulting in a large number of similar but Not what the user expected.</p>
+<p>In order to solve the disadvantages of traditional movie search mode, we have the idea of movie recommendation based on graphics, and judge the movies that users need or are interested in according to their historical behavior, interest points, social relations and other information.</p>
+<h4 id="1-2-project-objectives"><a href="#1-2-project-objectives" class="headerlink" title="1.2 project objectives"></a>1.2 project objectives</h4><p>This project will develop a movie recommendation system based on graphics. This system will realize the function of recommending movies for users. The key point is to recommend movies for users based on the keywords input by users in combination with users’ viewing habits.</p>
+<h4 id="1-3-project-delivery-products"><a href="#1-3-project-delivery-products" class="headerlink" title="1.3 project delivery products"></a>1.3 project delivery products</h4><p>All documents need to be submitted in electronic version and printed version.</p>
+<p>1) Project management plan</p>
+<p>2) Requirement specification</p>
+<p>3) Design report</p>
+<p>4) Test report</p>
+<p>5) System architecture diagram and configuration</p>
+<p>6) User manual</p>
+<p>7) User action menu</p>
+<p>8) Executable package</p>
+<p>9) Training materials</p>
+<p>10) Project work report (one for each)</p>
+<h3 id="2-project-organization"><a href="#2-project-organization" class="headerlink" title="2. project organization"></a>2. project organization</h3><h4 id="2-1-process-model"><a href="#2-1-process-model" class="headerlink" title="2.1 process model"></a>2.1 process model</h4><p>1)     Gantt chart of process model progress</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image002.jpg" alt="img"></p>
+<p>2)     Process model schedule</p>
+<table>
+<thead>
+<tr>
+<th>critical time</th>
+<th>tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 1</td>
+<td>draft project plan</td>
+</tr>
+<tr>
+<td>Week 2</td>
+<td>complete the first draft of   requirement specification, design report, system architecture diagram and   configuration</td>
+</tr>
+<tr>
+<td>Week 3 to week 6</td>
+<td>centralized development</td>
+</tr>
+<tr>
+<td>Week 7</td>
+<td>check the system operation</td>
+</tr>
+<tr>
+<td>Week 8</td>
+<td>complete the first draft of test   report</td>
+</tr>
+<tr>
+<td>Week 9</td>
+<td>complete the first draft of user   manual and user operation menu</td>
+</tr>
+<tr>
+<td>Week 10, week 11</td>
+<td>complete the first draft of training   materials</td>
+</tr>
+<tr>
+<td>Week 12</td>
+<td>report the project work</td>
+</tr>
+<tr>
+<td>Week 13</td>
+<td>deliver software project</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-2-division-and-cooperation-of-the-team"><a href="#2-2-division-and-cooperation-of-the-team" class="headerlink" title="2.2 division and cooperation of the team"></a>2.2 division and cooperation of the team</h4><table>
+<thead>
+<tr>
+<th>member</th>
+<th>role</th>
+<th>responsibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ye Fangyang</td>
+<td>Document maintainer and Secretary</td>
+<td>Sort out the requirement analysis   and write the requirement analysis report, maintain and timely modify and release   the updated technical documents.</td>
+</tr>
+<tr>
+<td>Gao Ge</td>
+<td>Algorithm Engineer, software R &amp;   D.</td>
+<td>Responsible for the research and   development of the system and the core logic of recommendation algorithm.</td>
+</tr>
+<tr>
+<td>Xiao Bin</td>
+<td>Data development engineer and   software R &amp; D Engineer</td>
+<td>Responsible for data format, data   processing and further review and design with the data set obtained from big   data analysis</td>
+</tr>
+<tr>
+<td>Wang Yulin</td>
+<td>UI designer</td>
+<td>Responsible for the interface design   of human-computer interaction</td>
+</tr>
+<tr>
+<td>Lin Weili</td>
+<td>Project manager</td>
+<td>Analyzes the project and writes it   project management plan</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-project-management"><a href="#3-project-management" class="headerlink" title="3. project management"></a>3. project management</h3><h4 id="3-1-management-objectives-and-priorities"><a href="#3-1-management-objectives-and-priorities" class="headerlink" title="3.1 management objectives and priorities"></a>3.1 management objectives and priorities</h4><p>Basic management principle: each member is not only an active speaker, but also a responsible cooperator, and also a decision maker. The decision should be made by everyone on the basis of full discussion. Once the decision is made, it must be carried out timely and effectively. No more objections.</p>
+<p>Goal 1: complete the basic functions of the project on time and on time, and release the products and documents on time, which is the highest goal of the team.</p>
+<p>Objective 2: follow the standardized project operation standard, strictly and completely document, fully annotated code, convenient for subsequent maintenance, which is the second objective.</p>
+<p>Objective 3: the product is stable, user-friendly and easy to operate. Try to see the problem from the user’s point of view and put forward solutions.</p>
+<p>Goal 4: focus on team building, reasonable division of labor, tacit cooperation and harmonious atmosphere. The weekly discussion was a positive one. Actively cooperate in the development process.</p>
+<p>Goal 5: try to be innovative and bright in project design and development.</p>
+<h4 id="3-2-project-risk-management"><a href="#3-2-project-risk-management" class="headerlink" title="3.2 project risk management"></a>3.2 project risk management</h4><table>
+<thead>
+<tr>
+<th>risk type</th>
+<th>existing risk</th>
+<th>Ways to circumvent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>schedule risk</td>
+<td>The project cannot be completed on   schedule due to time constraints.</td>
+<td>ake full account of various potential   factors and leave room appropriately; the task decomposition shall be   detailed and easy to assess; during the implementation process, it is   necessary to emphasize the important items of the project implementation   according to the schedule, and take maintaining the schedule as the   precondition when any problems are considered; at the same time, make full   use of resources by reasonably using the methods such as time limit and quick   follow-up. In case of delay, the group leader shall communicate with the   relevant person in charge of the bank in time and apply for the extension   time.</td>
+</tr>
+<tr>
+<td>The system does not have enough test   time.</td>
+<td>Continuous monitoring, project progress   control with the progress of the project, to ensure that each link has enough   time.</td>
+<td></td>
+</tr>
+<tr>
+<td>technical risk</td>
+<td>There are problems in the development of software architecture,   resulting in the failure of the completed software products to achieve the   intended goals.</td>
+<td>Use genuine software development.</td>
+</tr>
+<tr>
+<td>The lack of in-depth understanding of the development software   results in poor performance and quality of the developed products.</td>
+<td>Make a two-week learning plan in advance, and focus on the   technology stack used.</td>
+<td></td>
+</tr>
+<tr>
+<td>quality risk</td>
+<td>Quality does not meet user requirements.</td>
+<td>Communicate work results with users frequently. The management   adopts the development process meeting the requirements, carefully organizes   the inspection and review of the output, plans and organizes strict   independent testing, etc.</td>
+</tr>
+<tr>
+<td>tool risk</td>
+<td>The management tools, development tools and test tools necessary   for software project development and implementation are not in place in time.</td>
+<td>In the start-up phase of   the project, the source of various tools or possible alternative tools shall be   implemented, and the tools shall be tracked and put in place before they need   to be used. Before the project development, the infrastructure of the system   is designed and built and the performance test is carried out to ensure that   the architecture meets the performance indicators before the subsequent work.</td>
+</tr>
+<tr>
+<td>human resource risk</td>
+<td>Team members, because they think they can’t participate.</td>
+<td>Discuss solutions with users in   advance.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-3-project-communication-management"><a href="#3-3-project-communication-management" class="headerlink" title="3.3 project communication management"></a>3.3 project communication management</h4><p>Reporting mechanism:</p>
+<p>\1. Each team member is required to record the progress of work in weekly units, form development logs, and submit them to the Secretary in the form of electronic documents for sorting out, and finally maintain them by the document maintainer.</p>
+<p>\2. At the weekly regular meeting, each team member actively reviews and makes suggestions on the current development work. The team leader makes the final oral summary, and the Secretary presides over the meeting and records and sorts out the contents of the meeting. The document maintainer shall modify and maintain the corresponding documents and submit them to the group for meeting review and comments.</p>
+<p>\3. All team members shall closely monitor the risk status and submit the risk report after the risk occurs. The Secretary submits risk reports on a regular basis. If necessary, all team members shall be informed of the unexpected risks, and the team leader shall make a temporary decision. Then, at the regular meeting of the week, the group members will discuss the handling opinions on risks. And form the log of risk treatment as the future experience.</p>
+<p>\4. In the process of the project, the team members should conduct informal communication in various forms to make the communication more convenient and quick.</p>
+<h4 id="3-4-project-human-resource-management"><a href="#3-4-project-human-resource-management" class="headerlink" title="3.4 project human resource management"></a>3.4 project human resource management</h4><p>Personnel required for the project:</p>
+<table>
+<thead>
+<tr>
+<th>Person</th>
+<th>Job</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gao Ge</td>
+<td>Algorithm Engineer</td>
+<td>familiar with common recommended   algorithms and Python Programming</td>
+</tr>
+<tr>
+<td>Wang Yulin</td>
+<td>UI Designer</td>
+<td>familiar with Photoshop, HTML, CSS,   JavaScript</td>
+</tr>
+<tr>
+<td>Xiao Bin</td>
+<td>Data Development Engineer</td>
+<td>familiar with neo4j database</td>
+</tr>
+<tr>
+<td>Software Development Engineer</td>
+<td>familiar with Java programming,   spring cloud and other micro Service Frameworks</td>
+<td></td>
+</tr>
+<tr>
+<td>Ye Fangyang</td>
+<td>Document maintainer</td>
+<td>familiar with word and power point</td>
+</tr>
+<tr>
+<td>Software Development Engineer</td>
+<td>familiar with Java programming,   spring cloud and other micro Service Frameworks</td>
+<td></td>
+</tr>
+<tr>
+<td>Lin Weili</td>
+<td>Project Manager</td>
+<td>write the project management plan</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-technical-process"><a href="#4-technical-process" class="headerlink" title="4. technical process"></a>4. technical process</h3><h4 id="4-1-development-tools-methods-and-technologies"><a href="#4-1-development-tools-methods-and-technologies" class="headerlink" title="4.1 development tools, methods and technologies"></a>4.1 development tools, methods and technologies</h4><p>1) Programming languages: Java, Python</p>
+<p>2) Development environment: IntelliJ idea, pycharm</p>
+<p>3) Database: neo4j</p>
+<p>4) Code control software: git, gitlab</p>
+<h4 id="4-2-documents-to-be-delivered-for-software"><a href="#4-2-documents-to-be-delivered-for-software" class="headerlink" title="4.2 documents to be delivered for software"></a>4.2 documents to be delivered for software</h4><p>1) Project management plan</p>
+<p>The document, completed by the project manager, describes the entire management process for the project. This document is completed at the initial stage of software design requirements analysis, which is updated by the document maintainer.</p>
+<p>2) Requirements specification sit</p>
+<p>During the requirements analysis phase, all team members collect and analyze the user’s needs and make decisions at the regular meeting, and the document maintainer writes the first draft of the requirements specification specification, and updates the requirements changeat sits at each subsequent stage.</p>
+<p>3) Design report</p>
+<p>In the requirements analysis phase, the whole team collects and analyzes the user’s needs, analyzes and designs the software system according to the requirements, makes decisions at the regular meeting, writes the first draft of the design report by the document maintainer, and updates the requirements change at each stage.</p>
+<p>4) Test report</p>
+<p>During the software development phase, testers are required to write test specification documentation and update it during subsequent testing phases. The developer will establish the test environment and prepare the test data based on the test specification documentation.</p>
+<p>5) User manual</p>
+<p>During the update requirements analysis phase, testers need to begin writing user manuals and form a first draft after the requirements analysis is completed.</p>
+<p>6) User Action Menu</p>
+<p>During the update requirements analysis phase, testers need to begin writing user action menus and form a first draft after the requirements analysis is completed.</p>
+<h1 id="Ch-II-Data-collecting"><a href="#Ch-II-Data-collecting" class="headerlink" title="Ch II . Data collecting"></a>Ch II . Data collecting</h1><p>We have used <a href="https://grouplens.org/datasets/movielens/" target="_blank" rel="noopener"><strong>Movielens</strong></a> <strong>[1]</strong> dataset (<a href="http://files.grouplens.org/datasets/movielens/ml-latest-small.zip" target="_blank" rel="noopener">ml-latest-small</a>). This dataset describes <strong>5-star</strong> rating and free-text tagging activity from <a href="http://movielens.org/" target="_blank" rel="noopener">MovieLens</a>, a movie recommendation service. It contains <strong>100004 ratings</strong> and <strong>1296 tag applications</strong> across <strong>9125 movies</strong>. These data were created by <strong>671 users</strong> between January 09, 1995 and October 16, 2016.</p>
+<p>MovieLens <strong>1M</strong> movie ratings. Stable benchmark dataset. 1 million ratings from 6000 users on 4000 movies. Released 2/2003.</p>
+<p><a href="https://grouplens.org/datasets/movielens/" target="_blank" rel="noopener">https://grouplens.org/datasets/movielens/</a></p>
+<p>The format and other information of the data are stated below:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">RATINGS FILE DESCRIPTION</span><br><span class="line">================================================================================</span><br><span class="line"></span><br><span class="line">All ratings are contained in the file "ratings.dat" and are in the</span><br><span class="line">following format:</span><br><span class="line"></span><br><span class="line">UserID::MovieID::Rating::Timestamp</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>UserIDs range between 1 and 6040 </span><br><span class="line"><span class="bullet">- </span>MovieIDs range between 1 and 3952</span><br><span class="line"><span class="bullet">- </span>Ratings are made on a 5-star scale (whole-star ratings only)</span><br><span class="line"><span class="bullet">- </span>Timestamp is represented in seconds since the epoch as returned by time(2)</span><br><span class="line"><span class="bullet">- </span>Each user has at least 20 ratings</span><br><span class="line"></span><br><span class="line">USERS FILE DESCRIPTION</span><br><span class="line">================================================================================</span><br><span class="line"></span><br><span class="line">User information is in the file "users.dat" and is in the following</span><br><span class="line">format:</span><br><span class="line"></span><br><span class="line">UserID::Gender::Age::Occupation::Zip-code</span><br><span class="line"></span><br><span class="line">All demographic information is provided voluntarily by the users and is</span><br><span class="line">not checked for accuracy.  Only users who have provided some demographic</span><br><span class="line">information are included in this data set.</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>Gender is denoted by a "M" for male and "F" for female</span><br><span class="line"><span class="bullet">- </span>Age is chosen from the following ranges:</span><br><span class="line"></span><br><span class="line"><span class="bullet">	*  </span>1:  "Under 18"</span><br><span class="line"><span class="bullet">	* </span>18:  "18-24"</span><br><span class="line"><span class="bullet">	* </span>25:  "25-34"</span><br><span class="line"><span class="bullet">	* </span>35:  "35-44"</span><br><span class="line"><span class="bullet">	* </span>45:  "45-49"</span><br><span class="line"><span class="bullet">	* </span>50:  "50-55"</span><br><span class="line"><span class="bullet">	* </span>56:  "56+"</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>Occupation is chosen from the following choices:</span><br><span class="line"></span><br><span class="line"><span class="bullet">	*  </span>0:  "other" or not specified</span><br><span class="line"><span class="bullet">	*  </span>1:  "academic/educator"</span><br><span class="line"><span class="bullet">	*  </span>2:  "artist"</span><br><span class="line"><span class="bullet">	*  </span>3:  "clerical/admin"</span><br><span class="line"><span class="bullet">	*  </span>4:  "college/grad student"</span><br><span class="line"><span class="bullet">	*  </span>5:  "customer service"</span><br><span class="line"><span class="bullet">	*  </span>6:  "doctor/health care"</span><br><span class="line"><span class="bullet">	*  </span>7:  "executive/managerial"</span><br><span class="line"><span class="bullet">	*  </span>8:  "farmer"</span><br><span class="line"><span class="bullet">	*  </span>9:  "homemaker"</span><br><span class="line"><span class="bullet">	* </span>10:  "K-12 student"</span><br><span class="line"><span class="bullet">	* </span>11:  "lawyer"</span><br><span class="line"><span class="bullet">	* </span>12:  "programmer"</span><br><span class="line"><span class="bullet">	* </span>13:  "retired"</span><br><span class="line"><span class="bullet">	* </span>14:  "sales/marketing"</span><br><span class="line"><span class="bullet">	* </span>15:  "scientist"</span><br><span class="line"><span class="bullet">	* </span>16:  "self-employed"</span><br><span class="line"><span class="bullet">	* </span>17:  "technician/engineer"</span><br><span class="line"><span class="bullet">	* </span>18:  "tradesman/craftsman"</span><br><span class="line"><span class="bullet">	* </span>19:  "unemployed"</span><br><span class="line"><span class="bullet">	* </span>20:  "writer"</span><br><span class="line"></span><br><span class="line">MOVIES FILE DESCRIPTION</span><br><span class="line">================================================================================</span><br><span class="line"></span><br><span class="line">Movie information is in the file "movies.dat" and is in the following</span><br><span class="line">format:</span><br><span class="line"></span><br><span class="line">MovieID::Title::Genres</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>Titles are identical to titles provided by the IMDB (including</span><br><span class="line">year of release)</span><br><span class="line"><span class="bullet">- </span>Genres are pipe-separated and are selected from the following genres:</span><br><span class="line"></span><br><span class="line"><span class="bullet">	* </span>Action</span><br><span class="line"><span class="bullet">	* </span>Adventure</span><br><span class="line"><span class="bullet">	* </span>Animation</span><br><span class="line"><span class="bullet">	* </span>Children's</span><br><span class="line"><span class="bullet">	* </span>Comedy</span><br><span class="line"><span class="bullet">	* </span>Crime</span><br><span class="line"><span class="bullet">	* </span>Documentary</span><br><span class="line"><span class="bullet">	* </span>Drama</span><br><span class="line"><span class="bullet">	* </span>Fantasy</span><br><span class="line"><span class="bullet">	* </span>Film-Noir</span><br><span class="line"><span class="bullet">	* </span>Horror</span><br><span class="line"><span class="bullet">	* </span>Musical</span><br><span class="line"><span class="bullet">	* </span>Mystery</span><br><span class="line"><span class="bullet">	* </span>Romance</span><br><span class="line"><span class="bullet">	* </span>Sci-Fi</span><br><span class="line"><span class="bullet">	* </span>Thriller</span><br><span class="line"><span class="bullet">	* </span>War</span><br><span class="line"><span class="bullet">	* </span>Western</span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>Some MovieIDs do not correspond to a movie due to accidental duplicate</span><br><span class="line">entries and/or test entries</span><br><span class="line"><span class="bullet">- </span>Movies are mostly en</span><br></pre></td></tr></table></figure>
+<h4 id="description-for-each-file"><a href="#description-for-each-file" class="headerlink" title="description for each file"></a>description for each file</h4><table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>ratings.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>User’s ratings on each movie</td>
+</tr>
+<tr>
+<td>Properties</td>
+<td></td>
+</tr>
+<tr>
+<td>userId</td>
+<td>The id of user</td>
+</tr>
+<tr>
+<td>movieId</td>
+<td>The id of movie</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td>Ratings are made on a 5-star scale, with   half-star increments (0.5 stars - 5.0 stars).</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>Timestamps represent seconds since   midnight Coordinated Universal Time (UTC) of January 1, 1970.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>movies.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>offers the url for each movie from three   website sources</td>
+</tr>
+<tr>
+<td>Properties</td>
+<td></td>
+</tr>
+<tr>
+<td>movieId</td>
+<td>The id of movie</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Movie titles are entered manually or   imported from <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">https://www.themoviedb.org/</a>, and include the year of   release in parentheses. Errors and inconsistencies may exist in these titles.</td>
+</tr>
+<tr>
+<td>genres</td>
+<td>Genres are a pipe-separated list, and are   selected from the following:   <em> Action   </em> Adventure   <em> Animation   </em> Children’s   <em> Comedy   </em> Crime   <em> Documentary   </em> Drama   <em> Fantasy   </em> Film-Noir   <em> Horror   </em> Musical   <em> Mystery   </em> Romance   <em> Sci-Fi   </em> Thriller   <em> War   </em> Western</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>tags.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>All ratings are contained in the file   <code>ratings.csv</code></td>
+</tr>
+<tr>
+<td>Properties</td>
+<td></td>
+</tr>
+<tr>
+<td>userId</td>
+<td>The id of user</td>
+</tr>
+<tr>
+<td>movieId</td>
+<td>The id of movie</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>Tags are user-generated metadata about   movies. Each tag is typically a single word or short phrase. The meaning,   value, and purpose of a particular tag is determined by each user.</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>Timestamps represent seconds since   midnight Coordinated Universal Time (UTC) of January 1, 1970.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>links.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>offers the url for each movie from three   website sources</td>
+</tr>
+<tr>
+<td>Properties</td>
+<td></td>
+</tr>
+<tr>
+<td>movieId</td>
+<td>an identifier for movies used by   <a href="https://movielens.org" target="_blank" rel="noopener">https://movielens.org</a>.</td>
+</tr>
+<tr>
+<td>imdbId</td>
+<td>an identifier for movies used by   <a href="http://www.imdb.com" target="_blank" rel="noopener">http://www.imdb.com</a>.</td>
+</tr>
+<tr>
+<td>tmdbId</td>
+<td>an identifier for movies used by   <a href="https://www.themoviedb.org" target="_blank" rel="noopener">https://www.themoviedb.org</a>..</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Data-Storing-with-Neo4j"><a href="#Data-Storing-with-Neo4j" class="headerlink" title="Data Storing with Neo4j"></a>Data Storing with Neo4j</h3><h4 id="Load-Data-in-Neo4j"><a href="#Load-Data-in-Neo4j" class="headerlink" title="Load Data in Neo4j"></a>Load Data in Neo4j</h4><p><img src="https://camo.githubusercontent.com/eb0f72d99899feb4cffdc90c673c25363aae2504/68747470733a2f2f692e696d6775722e636f6d2f7548674a7348702e706e67" alt="img"></p>
+<h5 id="Ratings-Data-File-Structure-ratings-csv"><a href="#Ratings-Data-File-Structure-ratings-csv" class="headerlink" title="Ratings Data File Structure (ratings.csv)"></a>Ratings Data File Structure (ratings.csv)</h5><p>All ratings are contained in the file <code>ratings.csv</code>. Each line of this file after the header row represents one rating of one movie by one user, and has the following format:</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">userId,</span>movieId,rating,timestamp</span><br></pre></td></tr></table></figure>
+<h5 id="Tags-Data-File-Structure-tags-csv"><a href="#Tags-Data-File-Structure-tags-csv" class="headerlink" title="Tags Data File Structure (tags.csv)"></a>Tags Data File Structure (tags.csv)</h5><p>All tags are contained in the file <code>tags.csv</code>. Each line of this file after the header row represents one tag applied to one movie by one user, and has the following format:</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">user</span>Id,movieId,<span class="keyword">tag</span>,timestamp</span><br></pre></td></tr></table></figure>
+<h5 id="Movies-Data-File-Structure-movies-csv"><a href="#Movies-Data-File-Structure-movies-csv" class="headerlink" title="Movies Data File Structure (movies.csv)"></a>Movies Data File Structure (movies.csv)</h5><p>Movie information is contained in the file <code>movies.csv</code>. Each line of this file after the header row represents one movie, and has the following format:</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">movieId,</span>title,genres</span><br></pre></td></tr></table></figure>
+<h5 id="Links-Data-File-Structure-links-csv"><a href="#Links-Data-File-Structure-links-csv" class="headerlink" title="Links Data File Structure (links.csv)"></a>Links Data File Structure (links.csv)</h5><p>Identifiers that can be used to link to other sources of movie data are contained in the file <code>links.csv</code>. Each line of this file after the header row represents one movie, and has the following format:</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">movieId,</span>imdbId,tmdbId</span><br></pre></td></tr></table></figure>
+<h3 id="Graph-Structure"><a href="#Graph-Structure" class="headerlink" title="Graph Structure"></a>Graph Structure</h3><p>The graph structure consists of nodes with 3 distinct labels (Genre, Movie, User), and 3 relationships (RATED, TAGGED, IS_GENRE_OF). Links are added as additional properties to movie nodes.</p>
+<p><img src="RS-Movie  Report.assets/1585391942360.png" alt="1585391942360" style="zoom:67%;"></p>
+<h3 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h3><ul>
+<li><p>Create <strong>Genre</strong> nodes</p>
+</li>
+<li><p>Load</p>
+<p>movies.csv</p>
+<ul>
+<li>Create <strong>Movie</strong> nodes</li>
+</ul>
+</li>
+<li><p>Create Movie-Genre relationships</p>
+</li>
+<li><p>Load</p>
+<p>ratings.csv</p>
+<ul>
+<li>Create <strong>User</strong> nodes</li>
+</ul>
+</li>
+<li><p>Create User-Movie <strong>rating</strong> relationships</p>
+</li>
+<li><p>Load</p>
+<p>tags.csv</p>
+<ul>
+<li>Create User-Movie <strong>tag</strong> relationships</li>
+</ul>
+</li>
+<li><p>Load</p>
+<p>links.csv</p>
+<ul>
+<li>Update Movie nodes properties with links</li>
+</ul>
+</li>
+</ul>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><p>API documentation is generated using <em>Swagger</em> and <em>Connexion</em>.</p>
+<p>One example:</p>
+<p><strong>/api/movie/ratings/[TITLE]</strong></p>
+<p>Returns the ratings submitted for a given movie.</p>
+<p><a href="http://localhost:5000/api/movie/ratings/Braveheart" target="_blank" rel="noopener">http://localhost:5000/api/movie/ratings/Braveheart</a></p>
+<p>will return:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"rating"</span>: <span class="number">4.0</span>, </span><br><span class="line">    <span class="string">"user"</span>: <span class="string">"User 1"</span></span><br><span class="line">  &#125;, </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"rating"</span>: <span class="number">4.0</span>, </span><br><span class="line">    <span class="string">"user"</span>: <span class="string">"User 5"</span></span><br><span class="line">  &#125;, </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"rating"</span>: <span class="number">5.0</span>, </span><br><span class="line">    <span class="string">"user"</span>: <span class="string">"User 6"</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p><img src="https://camo.githubusercontent.com/4942d39a831a3a5e6fd655df9c7bba68437b0443/68747470733a2f2f692e696d6775722e636f6d2f644e76343446412e706e67" alt="img"></p>
+<h1 id="Ch-III-Data-Processing-and-Model-Establishing"><a href="#Ch-III-Data-Processing-and-Model-Establishing" class="headerlink" title="Ch III . Data Processing and Model Establishing"></a>Ch III . Data Processing and Model Establishing</h1><h3 id="1-Data-Processing"><a href="#1-Data-Processing" class="headerlink" title="1. Data Processing"></a>1. Data Processing</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">ratings_df = pd.read_csv(<span class="string">'ratings.csv'</span>)</span><br><span class="line">ratings_df.tail()</span><br><span class="line">movies_df = pd.read_csv(<span class="string">'movies.csv'</span>)</span><br><span class="line">movies_df[<span class="string">'movieRow'</span>] = movies_df.index</span><br></pre></td></tr></table></figure>
+<p><strong>steps in brief:</strong></p>
+<p>1.filter the features in the movies_df</p>
+<p>2.replacing the moviesId in the ratings_df</p>
+<p>3.filter the features in the movies_df</p>
+<p>4.Create movie rating matrix and rating record matrix</p>
+<p>The format of movie rating is: UserID :: MovieID :: Rating :: Timestamp UserID: [1-6040] MovieIDs: [1,3952] Ratings: an integer of 1-5 Timestamp: Timestamp has at least 20 per user  Scoring data preprocessing and network model design In the MovieLens data set, UserID, Gender, Age, Job, and MovieID in the movie feature can be considered as category data. One-Hot coding is usually used.</p>
+<p>However, there are many types of MovieID and UserID. If you use One-Hot encoding, each value will be encoded into a sparse vector with a high dimension. As a neural network input, it is computationally intensive.</p>
+<p>In addition, with One-Hot coding, the distances of different attribute values are equal, for example, the square of the distance between “less than 18 years old” and “50+” and “45-49” and “50+” are 2.</p>
+<p>Therefore, in the data preprocessing phase, we do not use One-Hot encoding, but only encode these data into numbers, and use these data as the index of the embedding matrix.</p>
+<p>The first layer of the neural network uses an embedding layer, and the embedding matrix is obtained through learning. Movie themes and movie names are special, they can be regarded as multi-valued attributes, and the length is not acceptable.  For movie themes, because there are not many types, Multi-Hot coding can be used directly. In the neural network, the encoded vectors are multiplied with the embedding matrix to achieve different length inputs.  The processing of movie names is a little more complicated. First, create a mapping dictionary of word-&gt; int, then use a list of numbers to encode, fill them with the same length, go through an LSTM network, and average all outputs of the network to get the movie name features.</p>
+<p>UserID, Occupation, MovieID unchanged Gender fields: ‘F’ and ‘M’ need to be converted into 0 and 1 Age fields: 7 consecutive numbers 0-6 Genres field: Multi-valued attribute, use Multi-Hot  Encoding, dimension is 18 Title field: create a mapping dictionary of word-&gt; int, then use a list of numbers to encode, and fill it with the same length, dimension is 15 </p>
+<h3 id="2-Model-establishing"><a href="#2-Model-establishing" class="headerlink" title="2. Model establishing"></a>2. Model establishing</h3><p>With the explosive growth of e-commerce and social media platforms, recommendation algorithms have become indispensable tools for many businesses. Two main branches of recommender algorithms are often distinguished: content-based recommender systems and collaborative filtering models. Content-based recommender systems use content information of users and items, such as their respective occupation and genre, to predict the next purchase of a user or rating of an item. Collaborative filtering models solve the matrix completion task by taking into account the collective interaction data to predict future ratings or purchases.</p>
+<p>In the academic world, generally speaking, recommendation engines are optimized around the effects of a single algorithm, such as recommendation by content, collaborative filtering (including item-based, user-based, SVD decomposition, etc.), context  Recommendations, Constraint-based recommendations, graph relationship mining, etc.  Many single algorithms that compare cattle can achieve better results on certain indicators, such as MAE, RMSE.  .  .  However, each algorithm has its own advantages. Each algorithm also has its own disadvantages, such as recommending items based on content to recommend similar items to the user’s historical results, and general item-based easy to recommend popular items (voted by more people).  .  .  .  Therefore, in the industry, such as various Internet companies, various algorithms are used to cooperate with each other to learn from each other’s strengths and enhance product effectiveness.  And in the complete recommendation system, not only traditional Rating recommendations, but also a lot of mining, Ranking to achieve the desired effect.</p>
+<p>In this work, we view matrix completion as a link prediction problem on graphs: the interaction data in collaborative filtering can be represented by a bipartite graph between user and item nodes, with observed ratings/purchases represented by links. Content information can naturally be included in this framework  in the form of node features. Predicting ratings then reduces to predicting labeled links in the bipartite user-item graph.</p>
+<h4 id="2-1-Goal"><a href="#2-1-Goal" class="headerlink" title="2.1 Goal:"></a>2.1 Goal:</h4><p>In this work a recommender system for a movie database using neo4j which will be able to:   – suggest top N movies similar to a given movie title to users  – predict user votes for the movies they have not voted for.</p>
+<ul>
+<li>1.Giving user id and movie id to predict a rating.</li>
+<li>2.Recommanding a same Genres’s movies.</li>
+<li>3.Recommanding your favorites movies.</li>
+<li>4.Recommanding Watched the same movie’s people who favorites movies.</li>
+</ul>
+<h4 id="2-2-Innovation"><a href="#2-2-Innovation" class="headerlink" title="2.2 Innovation:"></a>2.2 Innovation:</h4><p>In this work, we view matrix completion as a link prediction problem on graphs: the interaction data in collaborative filtering can be represented by a bipartite graph between user and item nodes, with observed ratings/purchases represented by links. Content information can naturally be included in this framework  in the form of node features. Predicting ratings then reduces to predicting labeled links in the bipartite user-item graph.</p>
+<p>We propose graph convolutional matrix completion (GC-MC): a graph-based auto-encoder framework for matrix completion, which builds on recent progress in deep learning on graphs [2, 6, 19, 5, 15, 30, 14].<br>The auto-encoder produces latent features of user and item nodes through a form of message passing on the bipartite interaction graph. These latent user and item representations are used to reconstruct the rating links through a bilinear decoder.</p>
+<p>The benefit of formulating matrix completion as a link prediction task on a bipartite graph becomes especially apparent when recommender graphs are accompanied with structured external information such as social networks. Combining such external information with interaction data can alleviate performance bottlenecks related to the cold start problem. We demonstrate that our graph auto-encoder model efficiently combines interaction data with side information, without resorting to recurrent frameworks.</p>
+<p>Consider a rating matrix M of shape Nu × Nv, where Nu is the number of users and Nv is the number of items. Entries Mij in this matrix encode either an observed rating (user i rated item j) from a set of discrete possible rating values, or the fact that the rating is unobserved (encoded by the value 0). See Figure 1 for an illustration. The task of matrix completion or recommendation can be seen as predicting the value of unobserved entries in M.</p>
+<p><img src="RS-Movie  Report.assets/1585393743311.png" alt="1585393743311" style="zoom: 33%;"></p>
+<h4 id="2-3-Neural-network-Construction"><a href="#2-3-Neural-network-Construction" class="headerlink" title="2.3 Neural network Construction"></a>2.3 Neural network Construction</h4><p><img src="https://pic3.zhimg.com/80/v2-3a4072d90a0be4792ab4b72a061844d2_1440w.jpg" alt="img"></p>
+<h6 id="1-Define-the-user’s-embedding-matrix"><a href="#1-Define-the-user’s-embedding-matrix" class="headerlink" title="(1) Define the user’s embedding matrix"></a>(1) Define the user’s embedding matrix</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_user_embedding</span><span class="params">(uid, user_gender, user_age, user_job)</span>:</span>     </span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"user_embedding"</span>):</span><br></pre></td></tr></table></figure>
+<h6 id="2-User’s-embedded-matrix-is-fully-connected-together-to-generate-User’s-features"><a href="#2-User’s-embedded-matrix-is-fully-connected-together-to-generate-User’s-features" class="headerlink" title="(2) User’s embedded matrix is fully connected together to generate User’s features"></a>(2) User’s embedded matrix is fully connected together to generate User’s features</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_user_feature_layer</span><span class="params">(uid_embed_layer, gender_embed_layer, age_embed_layer, job_embed_layer)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"user_fc"</span>):</span><br></pre></td></tr></table></figure>
+<h6 id="3-Define-the-embedding-matrix-for-Movie-ID"><a href="#3-Define-the-embedding-matrix-for-Movie-ID" class="headerlink" title="(3) Define the embedding matrix for Movie ID"></a>(3) Define the embedding matrix for Movie ID</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movie_id_embed_layer</span><span class="params">(movie_id)</span>:</span>     </span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"movie_embedding"</span>):         </span><br><span class="line">        movie_id_embed_matrix = tf.Variable(tf.random_uniform([movie_id_max, embed_dim], <span class="number">-1</span>, <span class="number">1</span>), name = <span class="string">"movie_id_embed_matrix"</span>)         </span><br><span class="line">        movie_id_embed_layer = tf.nn.embedding_lookup(movie_id_embed_matrix, movie_id, name = <span class="string">"movie_id_embed_layer"</span>)     		 </span><br><span class="line">     <span class="keyword">return</span> movie_id_embed_layer</span><br></pre></td></tr></table></figure>
+<h6 id="4-Sum-multiple-embedding-vectors-of-movie-type"><a href="#4-Sum-multiple-embedding-vectors-of-movie-type" class="headerlink" title="(4) Sum multiple embedding vectors of movie type"></a>(4) Sum multiple embedding vectors of movie type</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movie_categories_layers</span><span class="params">(movie_categories)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"movie_categories_layers"</span>):</span><br><span class="line">        movie_categories_embed_matrix = tf.Variable(tf.random_uniform([movie_categories_max, embed_dim], <span class="number">-1</span>, <span class="number">1</span>), name = <span class="string">"movie_categories_embed_matrix"</span>)</span><br><span class="line">        movie_categories_embed_layer = tf.nn.embedding_lookup(movie_categories_embed_matrix, movie_categories, name = <span class="string">"movie_categories_embed_layer"</span>)</span><br><span class="line">        <span class="keyword">if</span> combiner == <span class="string">"sum"</span>:</span><br><span class="line">            movie_categories_embed_layer = tf.reduce_sum(movie_categories_embed_layer, axis=<span class="number">1</span>, keep_dims=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#     elif combiner == "mean":</span></span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> movie_categories_embed_layer</span><br></pre></td></tr></table></figure>
+<h6 id="5-Implementation-of-Movie-Title’s-Convolutional-Network"><a href="#5-Implementation-of-Movie-Title’s-Convolutional-Network" class="headerlink" title="(5) Implementation of Movie Title’s Convolutional Network"></a>(5) Implementation of Movie Title’s Convolutional Network</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movie_cnn_layer</span><span class="params">(movie_titles)</span>:</span></span><br><span class="line">    <span class="comment">#从嵌入矩阵中得到电影名对应的各个单词的嵌入向量</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"movie_embedding"</span>):</span><br><span class="line">        movie_title_embed_matrix = tf.Variable(tf.random_uniform([movie_title_max, embed_dim], <span class="number">-1</span>, <span class="number">1</span>), name = <span class="string">"movie_title_embed_matrix"</span>)</span><br><span class="line">        movie_title_embed_layer = tf.nn.embedding_lookup(movie_title_embed_matrix, movie_titles, name = <span class="string">"movie_title_embed_layer"</span>)</span><br><span class="line">        movie_title_embed_layer_expand = tf.expand_dims(movie_title_embed_layer, <span class="number">-1</span>)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">#对文本嵌入层使用不同尺寸的卷积核做卷积和最大池化</span></span><br><span class="line">    pool_layer_lst = []</span><br><span class="line">    <span class="keyword">for</span> window_size <span class="keyword">in</span> window_sizes:</span><br><span class="line">        <span class="keyword">with</span> tf.name_scope(<span class="string">"movie_txt_conv_maxpool_&#123;&#125;"</span>.format(window_size)):</span><br><span class="line">            filter_weights = tf.Variable(tf.truncated_normal([window_size, embed_dim, <span class="number">1</span>, filter_num],stddev=<span class="number">0.1</span>),name = <span class="string">"filter_weights"</span>)</span><br><span class="line">            filter_bias = tf.Variable(tf.constant(<span class="number">0.1</span>, shape=[filter_num]), name=<span class="string">"filter_bias"</span>)</span><br><span class="line"> </span><br><span class="line">            conv_layer = tf.nn.conv2d(movie_title_embed_layer_expand, filter_weights, [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>], padding=<span class="string">"VALID"</span>, name=<span class="string">"conv_layer"</span>)</span><br><span class="line">            relu_layer = tf.nn.relu(tf.nn.bias_add(conv_layer,filter_bias), name =<span class="string">"relu_layer"</span>)</span><br><span class="line"> </span><br><span class="line">            maxpool_layer = tf.nn.max_pool(relu_layer, [<span class="number">1</span>,sentences_size - window_size + <span class="number">1</span> ,<span class="number">1</span>,<span class="number">1</span>], [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>], padding=<span class="string">"VALID"</span>, name=<span class="string">"maxpool_layer"</span>)</span><br><span class="line">            pool_layer_lst.append(maxpool_layer)</span><br><span class="line"> </span><br><span class="line">    <span class="comment">#Dropout层</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"pool_dropout"</span>):</span><br><span class="line">        pool_layer = tf.concat(pool_layer_lst, <span class="number">3</span>, name =<span class="string">"pool_layer"</span>)</span><br><span class="line">        max_num = len(window_sizes) * filter_num</span><br><span class="line">        pool_layer_flat = tf.reshape(pool_layer , [<span class="number">-1</span>, <span class="number">1</span>, max_num], name = <span class="string">"pool_layer_flat"</span>)</span><br><span class="line"> </span><br><span class="line">        dropout_layer = tf.nn.dropout(pool_layer_flat, dropout_keep_prob, name = <span class="string">"dropout_layer"</span>)</span><br><span class="line">    <span class="keyword">return</span> pool_layer_flat, dropout_layer</span><br></pre></td></tr></table></figure>
+<h6 id="6-Fully-connect-the-various-layers-of-Movie-together"><a href="#6-Fully-connect-the-various-layers-of-Movie-together" class="headerlink" title="(6) Fully connect the various layers of Movie together"></a>(6) Fully connect the various layers of Movie together</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_movie_feature_layer</span><span class="params">(movie_id_embed_layer, movie_categories_embed_layer, dropout_layer)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"movie_fc"</span>):</span><br><span class="line">        <span class="comment">#第一层全连接</span></span><br><span class="line">        movie_id_fc_layer = tf.layers.dense(movie_id_embed_layer, embed_dim, name = <span class="string">"movie_id_fc_layer"</span>, activation=tf.nn.relu)</span><br><span class="line">        movie_categories_fc_layer = tf.layers.dense(movie_categories_embed_layer, embed_dim, name = <span class="string">"movie_categories_fc_layer"</span>, activation=tf.nn.relu)</span><br><span class="line"> </span><br><span class="line">        <span class="comment">#第二层全连接</span></span><br><span class="line">        movie_combine_layer = tf.concat([movie_id_fc_layer, movie_categories_fc_layer, dropout_layer], <span class="number">2</span>)  <span class="comment">#(?, 1, 96)</span></span><br><span class="line">        movie_combine_layer = tf.contrib.layers.fully_connected(movie_combine_layer, <span class="number">200</span>, tf.tanh)  <span class="comment">#(?, 1, 200)</span></span><br><span class="line"> </span><br><span class="line">        movie_combine_layer_flat = tf.reshape(movie_combine_layer, [<span class="number">-1</span>, <span class="number">200</span>])</span><br><span class="line">    <span class="keyword">return</span> movie_combine_layer, movie_combine_layer_flat</span><br></pre></td></tr></table></figure>
+<h6 id="7-Building-a-Computational-Graph"><a href="#7-Building-a-Computational-Graph" class="headerlink" title="(7) Building a Computational Graph"></a>(7) Building a Computational Graph</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">tf.reset_default_graph()</span><br><span class="line">train_graph = tf.Graph()</span><br><span class="line"><span class="keyword">with</span> train_graph.as_default():</span><br><span class="line">    <span class="comment">#获取输入占位符</span></span><br><span class="line">    uid, user_gender, user_age, user_job, movie_id, movie_categories, movie_titles, targets, lr, dropout_keep_prob = get_inputs()</span><br><span class="line">    <span class="comment">#获取User的4个嵌入向量</span></span><br><span class="line">    uid_embed_layer, gender_embed_layer, age_embed_layer, job_embed_layer = get_user_embedding(uid, user_gender, user_age, user_job)</span><br><span class="line">    <span class="comment">#得到用户特征</span></span><br><span class="line">    user_combine_layer, user_combine_layer_flat = get_user_feature_layer(uid_embed_layer, gender_embed_layer, age_embed_layer, job_embed_layer)</span><br><span class="line">    <span class="comment">#获取电影ID的嵌入向量</span></span><br><span class="line">    movie_id_embed_layer = get_movie_id_embed_layer(movie_id)</span><br><span class="line">    <span class="comment">#获取电影类型的嵌入向量</span></span><br><span class="line">    movie_categories_embed_layer = get_movie_categories_layers(movie_categories)</span><br><span class="line">    <span class="comment">#获取电影名的特征向量</span></span><br><span class="line">    pool_layer_flat, dropout_layer = get_movie_cnn_layer(movie_titles)</span><br><span class="line">    <span class="comment">#得到电影特征</span></span><br><span class="line">    movie_combine_layer, movie_combine_layer_flat = get_movie_feature_layer(movie_id_embed_layer, </span><br><span class="line">                                                                                movie_categories_embed_layer, </span><br><span class="line">                                                                                dropout_layer)</span><br><span class="line">    <span class="comment">#计算出评分，要注意两个不同的方案，inference的名字（name值）是不一样的，后面做推荐时要根据name取得tensor</span></span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"inference"</span>):</span><br><span class="line">        <span class="comment">#将用户特征和电影特征作为输入，经过全连接，输出一个值的方案</span></span><br><span class="line"><span class="comment">#         inference_layer = tf.concat([user_combine_layer_flat, movie_combine_layer_flat], 1)  #(?, 200)</span></span><br><span class="line"><span class="comment">#         inference = tf.layers.dense(inference_layer, 1,</span></span><br><span class="line"><span class="comment">#                                     kernel_initializer=tf.truncated_normal_initializer(stddev=0.01), </span></span><br><span class="line"><span class="comment">#                                     kernel_regularizer=tf.nn.l2_loss, name="inference")</span></span><br><span class="line">        <span class="comment">#简单的将用户特征和电影特征做矩阵乘法得到一个预测评分</span></span><br><span class="line">        inference = tf.matmul(user_combine_layer_flat, tf.transpose(movie_combine_layer_flat))</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">with</span> tf.name_scope(<span class="string">"loss"</span>):</span><br><span class="line">        <span class="comment"># MSE损失，将计算值回归到评分</span></span><br><span class="line">        cost = tf.losses.mean_squared_error(targets, inference )</span><br><span class="line">        loss = tf.reduce_mean(cost)</span><br><span class="line">    <span class="comment"># 优化损失 </span></span><br><span class="line"><span class="comment">#     train_op = tf.train.AdamOptimizer(lr).minimize(loss)  #cost</span></span><br><span class="line">    global_step = tf.Variable(<span class="number">0</span>, name=<span class="string">"global_step"</span>, trainable=<span class="literal">False</span>)</span><br><span class="line">    optimizer = tf.train.AdamOptimizer(lr)</span><br><span class="line">    gradients = optimizer.compute_gradients(loss)  <span class="comment">#cost</span></span><br><span class="line">    train_op = optimizer.apply_gradients(gradients, global_step=global_step)</span><br></pre></td></tr></table></figure>
+<h1 id="Ch-IV-Model-Training-and-Evaluation"><a href="#Ch-IV-Model-Training-and-Evaluation" class="headerlink" title="Ch IV . Model Training and Evaluation"></a>Ch IV . Model Training and Evaluation</h1><h3 id="1-Model-training"><a href="#1-Model-training" class="headerlink" title="1. Model training"></a>1. Model training</h3><h6 id="Model-based-collaborative-filtering"><a href="#Model-based-collaborative-filtering" class="headerlink" title="Model-based collaborative filtering"></a>Model-based collaborative filtering</h6><p>Previously we used truncated SVD as a means to reduce the dimensionality of our matrices. To that end, we imputed the missing rating data with zero to compute SVD of a sparse matrix. However, one could also compute an estimate to SVD in an iterative learning process. For this purpose we only use the known ratings and try to minimize the error of computing the known rates via gradient descent. This algorithm was popularized during the Netflix prize for the best recommender system. Here is a more mathematical description.</p>
+<h6 id="Mathematical-description"><a href="#Mathematical-description" class="headerlink" title="Mathematical description"></a>Mathematical description</h6><p>SVD factorizes our rating matrix $M_{m*n}$ with a rank of $k$, according to equation (1a) to<br>3 matrices of $Um×k,Um×k$, $Σk×k$ and $I^T_{n×k}$:</p>
+<p>$$M=UΣ_kI^T                      $$                                                         $(1a)$<br>$$M≈UΣ_k′I^T$$                                                        $(1b)$</p>
+<p>where U is the matrix of user preferences and I the item preferences and Σ the matrix of singular values. The beauty of SVD is in this simple notion that instead of a full kk vector space, we can approximate M on a much smaller k′ latent space as in (1b). This approximation will not only reduce the dimensions of the rating matrix, but it also takes into account only the most important singular values and leaves behind the smaller singular values which could otherwise result in noise. This concept was used for the dimensionality reduction above as well.<br>To approximate M, we would like to find U and I matrices in k′ space using all the known rates which would mean we will solve an optimization problem. According to (2), every rate entry in M, $r_{ui}$ can be written as a dot product of $p_u$ and $q_i$:</p>
+<p>$$r_{ui}=p_u⋅q_i$$                                                             $(2)$</p>
+<p>where $p_u$ makes up the rows of UU and $q_i$ the columns of $I^T$. Here we disregard the diagonal $Σ\Sigma$ matrix for simplicity (as it provides only a scaling factor). graphically it would look something like this:</p>
+<p><a href="https://blog.codecentric.de/files/2019/06/Screenshot-2019-05-28-at-15.22.31.png" target="_blank" rel="noopener"><img src="https://blog.codecentric.de/files/2019/06/Screenshot-2019-05-28-at-15.22.31.png" alt="img" style="zoom: 50%;"></a></p>
+<p>Finding all $p_u$ and $q_i$s for all users and items will be possible via the following minimisation:</p>
+<p>$$min_{pu,qi}=∑_{r_ui∈M}(rui–pu⋅qi)^2 $$           (3)</p>
+<p>A gradient descent (GD) algorithm (or a variant of it such as stochastic gradient descent SGD) can be used to solve the minimisation problem and to compute all $p_u$ and $q_i$s. </p>
+<h6 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h6><p>A SVD algorithm similar to the one described above has been implemented in Surprise library, which I will use here. Aside from SVD, deep neural networks have also been repeatedly used to calculate the rating predictions. This blog entry describes one such effort. SVD was chosen because it produces a comparable accuracy to neural nets with a simpler training procedure. In the following you can see the steps to train a SVD model in Surprise. We gain a root-mean-squared error (RMSE) accuracy of 0.77 (the lower the better!) for our rating data, which does not sound bad at all. In fact, with a memory-based prediction from the item-item collaborative filtering described in the previous section, I could not get an RMSE lower that 1.0; that’s 23% improvement in prediction! Next we use this trained model to predict ratings for the movies that a given user u, here e.g. with the id = 7010, has not rated yet. The top 10 highly rated movies can be recommended to user 7010 as you can see below.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> surprise <span class="keyword">import</span> Dataset, Reader, SVD, accuracy</span><br><span class="line"><span class="keyword">from</span> surprise.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"> </span><br><span class="line"><span class="comment"># instantiate a reader and read in our rating data</span></span><br><span class="line">reader = Reader(rating_scale=(<span class="number">1</span>, <span class="number">5</span>))</span><br><span class="line">data = Dataset.load_from_df(ratings_f[[<span class="string">'userId'</span>,<span class="string">'movieId'</span>,<span class="string">'rating'</span>]], reader)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># train SVD on 75% of known rates</span></span><br><span class="line">trainset, testset = train_test_split(data, test_size=<span class="number">.25</span>)</span><br><span class="line">algorithm = SVD()</span><br><span class="line">algorithm.fit(trainset)</span><br><span class="line">predictions = algorithm.test(testset)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># check the accuracy using Root Mean Square Error</span></span><br><span class="line">accuracy.rmse(predictions)</span><br><span class="line">RMSE: <span class="number">0.7724</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># check the preferences of a particular user</span></span><br><span class="line">user_id = <span class="number">7010</span></span><br><span class="line">predicted_ratings = pred_user_rating(user_id)</span><br><span class="line">pdf = pd.DataFrame(predicted_ratings, columns = [<span class="string">'movies'</span>,<span class="string">'ratings'</span>])</span><br><span class="line">pdf.sort_values(<span class="string">'ratings'</span>, ascending=<span class="literal">False</span>, inplace=<span class="literal">True</span>)  </span><br><span class="line">pdf.set_index(<span class="string">'movies'</span>, inplace=<span class="literal">True</span>)</span><br><span class="line">pdf.head(<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.codecentric.de/files/2019/06/LastFig.png" target="_blank" rel="noopener"><img src="https://blog.codecentric.de/files/2019/06/LastFig.png" alt="user preference" style="zoom: 50%;"></a></p>
+<h6 id="Model-Training"><a href="#Model-Training" class="headerlink" title="Model Training"></a>Model Training</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br></pre></td><td class="code"><pre><span class="line">%matplotlib inline</span><br><span class="line">%config InlineBackend.figure_format = <span class="string">'retina'</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"> </span><br><span class="line">losses = &#123;<span class="string">'train'</span>:[], <span class="string">'test'</span>:[]&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">with</span> tf.Session(graph=train_graph) <span class="keyword">as</span> sess:</span><br><span class="line"> </span><br><span class="line">    <span class="comment">#搜集数据给tensorBoard用</span></span><br><span class="line">    <span class="comment"># Keep track of gradient values and sparsity</span></span><br><span class="line">    grad_summaries = []</span><br><span class="line">    <span class="keyword">for</span> g, v <span class="keyword">in</span> gradients:</span><br><span class="line">        <span class="keyword">if</span> g <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            grad_hist_summary = tf.summary.histogram(<span class="string">"&#123;&#125;/grad/hist"</span>.format(v.name.replace(<span class="string">':'</span>, <span class="string">'_'</span>)), g)</span><br><span class="line">            sparsity_summary = tf.summary.scalar(<span class="string">"&#123;&#125;/grad/sparsity"</span>.format(v.name.replace(<span class="string">':'</span>, <span class="string">'_'</span>)), tf.nn.zero_fraction(g))</span><br><span class="line">            grad_summaries.append(grad_hist_summary)</span><br><span class="line">            grad_summaries.append(sparsity_summary)</span><br><span class="line">    grad_summaries_merged = tf.summary.merge(grad_summaries)</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># Output directory for models and summaries</span></span><br><span class="line">    timestamp = str(int(time.time()))</span><br><span class="line">    out_dir = os.path.abspath(os.path.join(os.path.curdir, <span class="string">"runs"</span>, timestamp))</span><br><span class="line">    print(<span class="string">"Writing to &#123;&#125;\n"</span>.format(out_dir))</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># Summaries for loss and accuracy</span></span><br><span class="line">    loss_summary = tf.summary.scalar(<span class="string">"loss"</span>, loss)</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># Train Summaries</span></span><br><span class="line">    train_summary_op = tf.summary.merge([loss_summary, grad_summaries_merged])</span><br><span class="line">    train_summary_dir = os.path.join(out_dir, <span class="string">"summaries"</span>, <span class="string">"train"</span>)</span><br><span class="line">    train_summary_writer = tf.summary.FileWriter(train_summary_dir, sess.graph)</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># Inference summaries</span></span><br><span class="line">    inference_summary_op = tf.summary.merge([loss_summary])</span><br><span class="line">    inference_summary_dir = os.path.join(out_dir, <span class="string">"summaries"</span>, <span class="string">"inference"</span>)</span><br><span class="line">    inference_summary_writer = tf.summary.FileWriter(inference_summary_dir, sess.graph)</span><br><span class="line"> </span><br><span class="line">    sess.run(tf.global_variables_initializer())</span><br><span class="line">    saver = tf.train.Saver()</span><br><span class="line">    <span class="keyword">for</span> epoch_i <span class="keyword">in</span> range(num_epochs):</span><br><span class="line"> </span><br><span class="line">        <span class="comment">#将数据集分成训练集和测试集，随机种子不固定</span></span><br><span class="line">        train_X,test_X, train_y, test_y = train_test_split(features,  </span><br><span class="line">                                                           targets_values,  </span><br><span class="line">                                                           test_size = <span class="number">0.2</span>,  </span><br><span class="line">                                                           random_state = <span class="number">0</span>)  </span><br><span class="line"> </span><br><span class="line">        train_batches = get_batches(train_X, train_y, batch_size)</span><br><span class="line">        test_batches = get_batches(test_X, test_y, batch_size)</span><br><span class="line"> </span><br><span class="line">        <span class="comment">#训练的迭代，保存训练损失</span></span><br><span class="line">        <span class="keyword">for</span> batch_i <span class="keyword">in</span> range(len(train_X) // batch_size):</span><br><span class="line">            x, y = next(train_batches)</span><br><span class="line"> </span><br><span class="line">            categories = np.zeros([batch_size, <span class="number">18</span>])</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(batch_size):</span><br><span class="line">                categories[i] = x.take(<span class="number">6</span>,<span class="number">1</span>)[i]</span><br><span class="line"> </span><br><span class="line">            titles = np.zeros([batch_size, sentences_size])</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(batch_size):</span><br><span class="line">                titles[i] = x.take(<span class="number">5</span>,<span class="number">1</span>)[i]</span><br><span class="line"> </span><br><span class="line">            feed = &#123;</span><br><span class="line">                uid: np.reshape(x.take(<span class="number">0</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_gender: np.reshape(x.take(<span class="number">2</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_age: np.reshape(x.take(<span class="number">3</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_job: np.reshape(x.take(<span class="number">4</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                movie_id: np.reshape(x.take(<span class="number">1</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                movie_categories: categories,  <span class="comment">#x.take(6,1)</span></span><br><span class="line">                movie_titles: titles,  <span class="comment">#x.take(5,1)</span></span><br><span class="line">                targets: np.reshape(y, [batch_size, <span class="number">1</span>]),</span><br><span class="line">                dropout_keep_prob: dropout_keep, <span class="comment">#dropout_keep</span></span><br><span class="line">                lr: learning_rate&#125;</span><br><span class="line"> </span><br><span class="line">            step, train_loss, summaries, _ = sess.run([global_step, loss, train_summary_op, train_op], feed)  <span class="comment">#cost</span></span><br><span class="line">            losses[<span class="string">'train'</span>].append(train_loss)</span><br><span class="line">            train_summary_writer.add_summary(summaries, step)  <span class="comment">#</span></span><br><span class="line"> </span><br><span class="line">            <span class="comment"># Show every &lt;show_every_n_batches&gt; batches</span></span><br><span class="line">            <span class="keyword">if</span> (epoch_i * (len(train_X) // batch_size) + batch_i) % show_every_n_batches == <span class="number">0</span>:</span><br><span class="line">                time_str = datetime.datetime.now().isoformat()</span><br><span class="line">                print(<span class="string">'&#123;&#125;: Epoch &#123;:&gt;3&#125; Batch &#123;:&gt;4&#125;/&#123;&#125;   train_loss = &#123;:.3f&#125;'</span>.format(</span><br><span class="line">                    time_str,</span><br><span class="line">                    epoch_i,</span><br><span class="line">                    batch_i,</span><br><span class="line">                    (len(train_X) // batch_size),</span><br><span class="line">                    train_loss))</span><br><span class="line"> </span><br><span class="line">        <span class="comment">#使用测试数据的迭代</span></span><br><span class="line">        <span class="keyword">for</span> batch_i  <span class="keyword">in</span> range(len(test_X) // batch_size):</span><br><span class="line">            x, y = next(test_batches)</span><br><span class="line"> </span><br><span class="line">            categories = np.zeros([batch_size, <span class="number">18</span>])</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(batch_size):</span><br><span class="line">                categories[i] = x.take(<span class="number">6</span>,<span class="number">1</span>)[i]</span><br><span class="line"> </span><br><span class="line">            titles = np.zeros([batch_size, sentences_size])</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(batch_size):</span><br><span class="line">                titles[i] = x.take(<span class="number">5</span>,<span class="number">1</span>)[i]</span><br><span class="line"> </span><br><span class="line">            feed = &#123;</span><br><span class="line">                uid: np.reshape(x.take(<span class="number">0</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_gender: np.reshape(x.take(<span class="number">2</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_age: np.reshape(x.take(<span class="number">3</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                user_job: np.reshape(x.take(<span class="number">4</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                movie_id: np.reshape(x.take(<span class="number">1</span>,<span class="number">1</span>), [batch_size, <span class="number">1</span>]),</span><br><span class="line">                movie_categories: categories,  <span class="comment">#x.take(6,1)</span></span><br><span class="line">                movie_titles: titles,  <span class="comment">#x.take(5,1)</span></span><br><span class="line">                targets: np.reshape(y, [batch_size, <span class="number">1</span>]),</span><br><span class="line">                dropout_keep_prob: <span class="number">1</span>,</span><br><span class="line">                lr: learning_rate&#125;</span><br><span class="line"> </span><br><span class="line">            step, test_loss, summaries = sess.run([global_step, loss, inference_summary_op], feed)  <span class="comment">#cost</span></span><br><span class="line"> </span><br><span class="line">            <span class="comment">#保存测试损失</span></span><br><span class="line">            losses[<span class="string">'test'</span>].append(test_loss)</span><br><span class="line">            inference_summary_writer.add_summary(summaries, step)  <span class="comment">#</span></span><br><span class="line"> </span><br><span class="line">            time_str = datetime.datetime.now().isoformat()</span><br><span class="line">            <span class="keyword">if</span> (epoch_i * (len(test_X) // batch_size) + batch_i) % show_every_n_batches == <span class="number">0</span>:</span><br><span class="line">                print(<span class="string">'&#123;&#125;: Epoch &#123;:&gt;3&#125; Batch &#123;:&gt;4&#125;/&#123;&#125;   test_loss = &#123;:.3f&#125;'</span>.format(</span><br><span class="line">                    time_str,</span><br><span class="line">                    epoch_i,</span><br><span class="line">                    batch_i,</span><br><span class="line">                    (len(test_X) // batch_size),</span><br><span class="line">                    test_loss))</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># Save Model</span></span><br><span class="line">    saver.save(sess, save_dir)  <span class="comment">#, global_step=epoch_i</span></span><br><span class="line">    print(<span class="string">'Model Trained and Saved'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="2-Evaluate-the-model"><a href="#2-Evaluate-the-model" class="headerlink" title="2. Evaluate the model"></a>2. Evaluate the model</h3><h6 id="1-View-visualization-results-in-TensorBoard"><a href="#1-View-visualization-results-in-TensorBoard" class="headerlink" title="(1) View visualization results in TensorBoard"></a>(1) View visualization results in TensorBoard</h6><p><img src="https://img-blog.csdn.net/20171216161054808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdjaGVuZzEzOTQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h6 id="Get-Tensors"><a href="#Get-Tensors" class="headerlink" title="Get Tensors"></a>Get Tensors</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_tensors</span><span class="params">(loaded_graph)</span>:</span></span><br><span class="line">    uid = loaded_graph.get_tensor_by_name(<span class="string">"uid:0"</span>)</span><br><span class="line">    user_gender = loaded_graph.get_tensor_by_name(<span class="string">"user_gender:0"</span>)</span><br><span class="line">    user_age = loaded_graph.get_tensor_by_name(<span class="string">"user_age:0"</span>)</span><br><span class="line">    user_job = loaded_graph.get_tensor_by_name(<span class="string">"user_job:0"</span>)</span><br><span class="line">    movie_id = loaded_graph.get_tensor_by_name(<span class="string">"movie_id:0"</span>)</span><br><span class="line">    movie_categories = loaded_graph.get_tensor_by_name(<span class="string">"movie_categories:0"</span>)</span><br><span class="line">    movie_titles = loaded_graph.get_tensor_by_name(<span class="string">"movie_titles:0"</span>)</span><br><span class="line">    targets = loaded_graph.get_tensor_by_name(<span class="string">"targets:0"</span>)</span><br><span class="line">    dropout_keep_prob = loaded_graph.get_tensor_by_name(<span class="string">"dropout_keep_prob:0"</span>)</span><br><span class="line">    lr = loaded_graph.get_tensor_by_name(<span class="string">"LearningRate:0"</span>)</span><br><span class="line">    <span class="comment">#两种不同计算预测评分的方案使用不同的name获取tensor inference</span></span><br><span class="line"><span class="comment">#     inference = loaded_graph.get_tensor_by_name("inference/inference/BiasAdd:0")</span></span><br><span class="line">    inference = loaded_graph.get_tensor_by_name(<span class="string">"inference/MatMul:0"</span>)<span class="comment">#</span></span><br><span class="line">    movie_combine_layer_flat = loaded_graph.get_tensor_by_name(<span class="string">"movie_fc/Reshape:0"</span>)</span><br><span class="line">    user_combine_layer_flat = loaded_graph.get_tensor_by_name(<span class="string">"user_fc/Reshape:0"</span>)</span><br><span class="line">    <span class="keyword">return</span> uid, user_gender, user_age, user_job, movie_id, movie_categories, movie_titles, targets, lr, dropout_keep_prob, inference, movie_combine_layer_flat, user_combine_layer_flat</span><br></pre></td></tr></table></figure>
+<h6 id="2-Forward-propagate-the-network-and-calculate-the-predicted-score"><a href="#2-Forward-propagate-the-network-and-calculate-the-predicted-score" class="headerlink" title="(2) Forward propagate the network and calculate the predicted score"></a>(2) Forward propagate the network and calculate the predicted score</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rating_movie</span><span class="params">(user_id_val, movie_id_val)</span>:</span></span><br><span class="line">    loaded_graph = tf.Graph()  <span class="comment">#</span></span><br><span class="line">    <span class="keyword">with</span> tf.Session(graph=loaded_graph) <span class="keyword">as</span> sess:  <span class="comment">#</span></span><br><span class="line">        <span class="comment"># Load saved model</span></span><br><span class="line">        loader = tf.train.import_meta_graph(load_dir + <span class="string">'.meta'</span>)</span><br><span class="line">        loader.restore(sess, load_dir)</span><br><span class="line"> </span><br><span class="line">        <span class="comment"># Get Tensors from loaded model</span></span><br><span class="line">        uid, user_gender, user_age, user_job, movie_id, movie_categories, movie_titles, targets, lr, dropout_keep_prob, inference,_, __ = get_tensors(loaded_graph)  <span class="comment">#loaded_graph</span></span><br><span class="line"> </span><br><span class="line">        categories = np.zeros([<span class="number">1</span>, <span class="number">18</span>])</span><br><span class="line">        categories[<span class="number">0</span>] = movies.values[movieid2idx[movie_id_val]][<span class="number">2</span>]</span><br><span class="line"> </span><br><span class="line">        titles = np.zeros([<span class="number">1</span>, sentences_size])</span><br><span class="line">        titles[<span class="number">0</span>] = movies.values[movieid2idx[movie_id_val]][<span class="number">1</span>]</span><br><span class="line"> </span><br><span class="line">        feed = &#123;</span><br><span class="line">              uid: np.reshape(users.values[user_id_val<span class="number">-1</span>][<span class="number">0</span>], [<span class="number">1</span>, <span class="number">1</span>]),</span><br><span class="line">              user_gender: np.reshape(users.values[user_id_val<span class="number">-1</span>][<span class="number">1</span>], [<span class="number">1</span>, <span class="number">1</span>]),</span><br><span class="line">              user_age: np.reshape(users.values[user_id_val<span class="number">-1</span>][<span class="number">2</span>], [<span class="number">1</span>, <span class="number">1</span>]),</span><br><span class="line">              user_job: np.reshape(users.values[user_id_val<span class="number">-1</span>][<span class="number">3</span>], [<span class="number">1</span>, <span class="number">1</span>]),</span><br><span class="line">              movie_id: np.reshape(movies.values[movieid2idx[movie_id_val]][<span class="number">0</span>], [<span class="number">1</span>, <span class="number">1</span>]),</span><br><span class="line">              movie_categories: categories,  <span class="comment">#x.take(6,1)</span></span><br><span class="line">              movie_titles: titles,  <span class="comment">#x.take(5,1)</span></span><br><span class="line">              dropout_keep_prob: <span class="number">1</span>&#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment"># Get Prediction</span></span><br><span class="line">        inference_val = sess.run([inference], feed)  </span><br><span class="line"> </span><br><span class="line">        <span class="keyword">return</span> (inference_val)</span><br></pre></td></tr></table></figure>
+<h6 id="3-Generate-Movie-Feature-Matrix"><a href="#3-Generate-Movie-Feature-Matrix" class="headerlink" title="(3) Generate Movie Feature Matrix"></a>(3) Generate Movie Feature Matrix</h6><p>Combine the trained movie features into a movie feature matrix and save it locally</p>
+<h6 id="4-Generate-User-Feature-Matrix"><a href="#4-Generate-User-Feature-Matrix" class="headerlink" title="(4) Generate User Feature Matrix"></a>(4) Generate User Feature Matrix</h6><p>Combine the trained user features into a user feature matrix and save it locally</p>
+<h6 id="5-Use-the-produced-user-feature-matrix-and-movie-feature-matrix-to-make-movie-recommendations"><a href="#5-Use-the-produced-user-feature-matrix-and-movie-feature-matrix-to-make-movie-recommendations" class="headerlink" title="(5) Use the produced user feature matrix and movie feature matrix to make movie recommendations"></a>(5) Use the produced user feature matrix and movie feature matrix to make movie recommendations</h6><p><strong>(a)</strong> The idea is to calculate the cosine similarity between the feature vector of the movie currently being watched and the feature matrix of the entire movie, and take the top_k with the highest similarity. Here, some random selections are added here to ensure that each recommendation is slightly different.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def Recommendation_same_type_movie（movie_id_val，top_k = 20）：loaded_graph = tf.Graph（）</span><br></pre></td></tr></table></figure>
+<p><strong>(b) </strong>The idea is to use the user feature vector and the movie feature matrix to calculate the ratings of all movies, take the top_k with the highest score, and also add some random selection parts.</p>
+<p><strong>(c)</strong> Those who have watched this movie also watched (liked) which movies first select the top_k people who like a certain movie and get the user feature vector of these people.<br>   Then calculate these people’s ratings for all movies, select the movie with the highest rating for each person as a recommendation, and also add a random selection</p>
+<p>The above is the commonly used recommendation function implemented. The network model is trained as a regression problem, and the trained user feature matrix and movie feature matrix are recommended for recommendation.</p>
+<h3 id="3-Result-Comparison"><a href="#3-Result-Comparison" class="headerlink" title="3. Result Comparison"></a>3. Result Comparison</h3><p>We compare against current state-of-the-art collaborative filtering algorithms, such as AutoRec, LLorma, and CF-NADE. Results are reported as averages over the same five 90/10 training/test set splits as in and summarized in Table 1. Model choices are validated on an internal 95/5 split of the training set. For ML-1M we use accumulate messages through summation in Eq. (2), use a dropout rate of 0:7, and symmetric normalization. As ML-10M has twice the number of rating classes, we use twice the number of basis function matrices in the decoder. Furthermore, we use stacking accumulation, a dropout of 0:3 and symmetric normalization. We train for 3,500 full-batch epochs, and 18,000 mini-batch iterations (20 epochs with batch size 10,000) on the ML-1M and ML-10M dataset, respectively.</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/1585834651250.png" alt="1585834651250"></p>
+<p>Table 1: Comparison of average test RMSE scores on five 90/10 training/test set splits  without the use of side information. For CF-NADE, we report the bestperforming model variant.</p>
+<h1 id="Ch-V-System-Architecture"><a href="#Ch-V-System-Architecture" class="headerlink" title="Ch V . System Architecture"></a>Ch V . System Architecture</h1><p>Good Movie is a web based movie recommendation system. Web architecture is still developing, from oldest single server system to nowadays micro service, it’s becoming smarter and capable for different tasks which requiring multiple functions and fast response. </p>
+<p>When designing this system ,we comply with MVC design protocols, that is we separate Model, View, Controller as different components of our system. Therefore, we can easily focus on each part of system without concerning their coupling problems. With MVC, Reusing developed components can be effective, and iterative developing and deploying will cost less.</p>
+<p>Because the requirement of users change frequently, micro service architecture is adopted by our system. With micro service, we can divide our function into different services and deploy them on different servers thus they can work along without any impact on others. Also it’s easy to have duplication of services so that visiting pressure of one function can be balanced to different servers. </p>
+<p>Lastly, we use cache to cut down our system’s response time, use duplication of database in case of data missing. </p>
+<p>Here’s our system’s overall architecture:</p>
+<p><img src="RS-Movie Ver.4 Report  目录版.assets/1585928995398.png" alt="1585928995398"></p>
+<p><strong>Picture 1.overall system architecture</strong></p>
+<h3 id="1-1-Technology-requirements"><a href="#1-1-Technology-requirements" class="headerlink" title="1.1 Technology requirements"></a>1.1 Technology requirements</h3><p>As systems based on web becoming popular, they are facing more challenges and need mature technologies and designs to overcome those barriers. For our movie recommending system, the challenges are:</p>
+<p>(1)  Ability to sustain high load pressure</p>
+<p>The number of web users is growing, our system will face plenty of visits and service requirements. However, servers have their computing limitation. How to improve our servers’ ability of concurrency? </p>
+<p>(2)  Ability to response in limited time</p>
+<p>Web application requires fast responding so that users have good experience. Users won’t visit a website which answers slowly. How to make our system responses quickly? </p>
+<p>(3)  Ability to recover from accident</p>
+<p>Any system should safely keep information of users and valuable data. Once an accident happened(like power outrage), it should be able to get back all the data and work again. User won’t be happy if they find that their data have lost by accident. How can we achieve this ability?</p>
+<p>(4)  Ability to tolerate faults and working while updating</p>
+<p>Our system may meet server faults or changing requirements or need of new functions. We shouldn’t stop our service to repair those faults, or add functions. How can we archive this ability?</p>
+<h3 id="1-2-Design-Details"><a href="#1-2-Design-Details" class="headerlink" title="1.2 Design Details"></a>1.2 Design Details</h3><p>In this part, we will discuss the details of our architecture, The solution of our technology requirements, including Cluster Deployment, Horizontal division of service, Vertical division of components ,cache, and micro services.</p>
+<p><img src="RS-Movie Ver.4 Report  目录版.assets/1585929026174.png" alt="1585929026174"></p>
+<p>​                       <strong>Picture 2. detail system architecture</strong></p>
+<h4 id="1-Cluster-Deployment"><a href="#1-Cluster-Deployment" class="headerlink" title="(1)  Cluster Deployment"></a>(1)  Cluster Deployment</h4><p>Single server have its limitation of calculating ability, and as number of visits growing, users will get their response slower. In order to fulfill users’ visiting requirement, we need improve our system’s ability to sustain load pressure.</p>
+<p>We use Cluster Deployment to achieve such requirement. We use multiple servers which form a cluster and provide same service. And there are multiple server clusters which provide different services. When a request come, an independent server(load balancing server) will be responsible for choosing a server to deal with the request. The choice depends on servers’ condition, thus make best use of server’s computing resources.</p>
+<p>On the other hand, multiple servers means we can have better fault-tolerant service. System will still work normally even if one server break down, as long as there are other servers providing same service. </p>
+<p>With cluster deployment, we can make our system work efficiently.</p>
+<h4 id="2-Horizontal-division-of-service"><a href="#2-Horizontal-division-of-service" class="headerlink" title="(2)      Horizontal division of service"></a>(2)      Horizontal division of service</h4><p>One server providing multiple services is not good. Firstly, the division of work is complex, which means it’s difficult to manage and update the system. Secondly, Change of one service will affect other services, which affects our developing efficiency.</p>
+<p>We can divide the services horizontally. One server provides exactly one type of service. Services can contact with each other but have no impact on their work style. In our case, we can divide the system into 4 kinds of services: 1. recommend, 2. user info, 3. rating, 4. search.</p>
+<p>In this way we can have unambiguous understanding of system functionality. We can deal         with each service independently, which means updating is easy.</p>
+<h4 id="3-Vertical-division-of-component"><a href="#3-Vertical-division-of-component" class="headerlink" title="(3)  Vertical division of component"></a>(3)  Vertical division of component</h4><p>Traditional web developing merge representing, controlling and data together, thus it’s difficult to update or find problems. In our system, we use MVC design model, therefore make components reusable and easy to manage. Each group of developers can focus on each part of system, and they can communicate to make components able to connect. </p>
+<h4 id="4-cache"><a href="#4-cache" class="headerlink" title="(4)  cache"></a>(4)  cache</h4><p>In order to reduce database access, cut down user’s waiting time, we can make use of cache to save data that are frequently accessed. Cache means read data from register, which is faster than read from disks.</p>
+<p>We can use two kinds of cache:1. cache database, 2. browser cache</p>
+<h4 id="5-Micro-service"><a href="#5-Micro-service" class="headerlink" title="(5)  Micro service"></a>(5)  Micro service</h4><p>After divide services horizontally and cluster deployment, we need a method to connect them together, so that they can cooperate and exchange information. We can use micro service tools to help register services, discover services, and balance load.</p>
+<h3 id="1-3-Technology-choice"><a href="#1-3-Technology-choice" class="headerlink" title="1.3 Technology choice"></a>1.3 Technology choice</h3><p>Here’s our technology stack of this system:</p>
+<p><img src="RS-Movie Ver.4 Report  目录版.assets/1585929054943.png" alt="1585929054943"></p>
+<p><strong>Picture 3. technology stack</strong></p>
+<p><strong>①</strong>　<strong>Vue:</strong></p>
+<p>Vue.js is a progressive framework for building user interfaces. Different from other heavyweight frameworks, VUE adopts a design of bottom-up incremental development.<br>         The goal of Vue.js is to implement data binding of responses and combined view components with as simple an API as possible</p>
+<p>We choose Vue so that we can focus on the view component, without concerning logic implementation and create beautiful website quickly.</p>
+<p><strong>②</strong>　<strong>Spring Cloud:</strong></p>
+<p>Spring Cloud is an ordered set of frames. It skillfully simplifies the development of distributed system infrastructure by using the development convenience of Spring Boot, such as service discovery registration, configuration center, message bus, load balancing, circuit breaker, data monitoring, etc., which can be started and deployed with one key with Spring Boot’s development style.</p>
+<p>We choose Spring cloud because it’s mature and compatible. In side this framework, we have Eureka for registering and discovering services, Feign for restful access to services, Ribbon for load balance.</p>
+<p><strong>③</strong>　<strong>Mahout:</strong></p>
+<p>Mahout is an open source project under Apache Software Foundation (ASF), which provides the implementation of some extensible classical algorithms in the field of machine learning and aims to help developers create intelligent applications more conveniently and quickly. Mahout includes many implementations, including clustering, classification, recommendation filtering, and frequent subitem mining.</p>
+<p>We choose Mahout to quickly implement our kernel function: movie recommendation.</p>
+<p><strong>④</strong>　<strong>Neo4j:</strong></p>
+<p>Because recommendation need a lot of calculation of relationships, using traditional sql database means huge calculation cost, so instead we choose Neo4j. </p>
+<p>It’s a graph database thus easy to deal with relationship. Also it has high performance, we can benefit from using it.</p>
+<p><strong>⑤</strong>　<strong>Redis:</strong></p>
+<p>Frequently access to database is slow, and has risk of system breaking down. So we need cache to replace part of database access.</p>
+<p>Redis is a database based on register, we can use it to store data which are usually accessed, like user login information.</p>
+<h1 id="Ch-VI-System-Deployment"><a href="#Ch-VI-System-Deployment" class="headerlink" title="Ch VI  .  System Deployment"></a>Ch VI  .  System Deployment</h1><h3 id="1-storing-with-noe4j"><a href="#1-storing-with-noe4j" class="headerlink" title="1. storing with noe4j"></a>1. storing with noe4j</h3><h6 id="1-2-1-introduction"><a href="#1-2-1-introduction" class="headerlink" title="1.2.1 introduction"></a>1.2.1 introduction</h6><p>Neo4j is a high-performance,NOSQL graph database that stores structured data on a network rather than in tables.It is an embedded, disk-based, fully transactional Java persistence engine, but it stores structured data on a network (mathematically called a graph) rather than in tables.Neo4j can also be thought of as a high-performance graph engine with all the features of a mature database.Programmers work in an object-oriented, flexible network structure rather than strict, static tables</p>
+<h6 id="1-2-2-Transform-csv-data-to-Neo4j"><a href="#1-2-2-Transform-csv-data-to-Neo4j" class="headerlink" title="1.2.2 Transform csv data to Neo4j"></a>1.2.2 Transform csv data to Neo4j</h6><p>Using Neo4j-Importer to load csv data into Neo4j</p>
+<h3 id="2-Using-Google-Analytics-to-collect-data"><a href="#2-Using-Google-Analytics-to-collect-data" class="headerlink" title="2.Using Google Analytics to collect data"></a>2.Using Google Analytics to collect data</h3><h5 id="2-1-Introduction"><a href="#2-1-Introduction" class="headerlink" title="2.1 Introduction"></a>2.1 Introduction</h5><p>Google Analytics:</p>
+<p>A website analysis tool launched by Google can be used to analyze the user-centered browsing data of websites. The tool can help website builders to better manage websites, track user behaviors and monitor website traffic in real time, so as to optimize websites. It includes a series of data analysis tools and visualization tools.</p>
+<p>We can use Google Analytics to collect data on user behavior and use it as input to the recommendation algorithm model, making the recommendation algorithm more intelligent. </p>
+<p>The following are some of the information that we may use Google Analytitcs to extract useful for recommendation algorithms: </p>
+<p>Tracking the overall user behavior of the website: </p>
+<p>A. All Movies Viewed in Recent Seven Days </p>
+<p>B. Keywords frequently searched by users in the past seven days </p>
+<p>C. Number of views of the entire website in the past seven days </p>
+<p>Tracking of individual user behavior: </p>
+<p>A. Movie pages that the user has recently visited frequently </p>
+<p>B. The user’s most recent search content </p>
+<p>C. The user stayed on a web page for more than three minutes</p>
+<h5 id="2-2-Implementing："><a href="#2-2-Implementing：" class="headerlink" title="2.2 Implementing："></a>2.2 Implementing：</h5><p>2.1 register An Account </p>
+<p>​       To use google analytics ,the first thing is to register.Then Sign in to get the dashboard as below pictrues shows.</p>
+<p><img src="RS-Movie  Report.assets/clip_image002.jpg" alt="img"></p>
+<h4 id="2-2-configuration-on-the-website"><a href="#2-2-configuration-on-the-website" class="headerlink" title="2.2.configuration on the website"></a>2.2.configuration on the website</h4><p>We use two ways to configure, the first is overall configuration which track the entire website and the second is local configuration which we can customize the actions of customers we want to track</p>
+<p>For the implementation , there are also two api provided by google analytics .They are gtag.js and analytics.js we ‘d like to use gtag.js here for its convienience.</p>
+<h4 id="2-1Global-configuration"><a href="#2-1Global-configuration" class="headerlink" title="2.1Global configuration"></a>2.1Global configuration</h4><p>The global site tag (gtag.js) is a JavaScript tagging framework and API that allows you to send event data to Google Analytics, Google Ads, and Google Marketing Platform.</p>
+<p>To configure it on the website we add below code(global snippet) on the page which you want to track</p>
+<p><img src="RS-Movie  Report.assets/clip_image004.jpg" alt="img"></p>
+<h4 id="2-2-Track-info-Configuration"><a href="#2-2-Track-info-Configuration" class="headerlink" title="2.2 Track info Configuration"></a>2.2 Track info Configuration</h4><p>u  Send Event data to Analytics </p>
+<p>​       For example to track the click event.We can use this to track the user click and search info.</p>
+<p><img src="RS-Movie  Report.assets/clip_image006.jpg" alt="img"></p>
+<p>u  Use gtag.js to measure user timing</p>
+<p>Use the event command to send a timing_complete event and add the below code to send timing info. We could use this to track the stick time of user.</p>
+<p><img src="RS-Movie  Report.assets/clip_image007.png" alt="img"></p>
+<p><img src="RS-Movie  Report.assets/clip_image009.jpg" alt="img"></p>
+<h4 id="2-3Track-the-PageView"><a href="#2-3Track-the-PageView" class="headerlink" title="2.3Track the PageView"></a>2.3Track the PageView</h4><p>The Google Analytics tag automatically sends a pageview hit, unless you disable pageview </p>
+<p>We could use this to track the popular movie site</p>
+<h4 id="2-3-Extract-the-information-from-google-analytics-to-Java"><a href="#2-3-Extract-the-information-from-google-analytics-to-Java" class="headerlink" title="2.3 Extract the information from google analytics to Java"></a>2.3 Extract the information from google analytics to Java</h4><p>We use core reporting API:</p>
+<p>The Core Reporting API provides access to the tabular data in Google Analytics standard and custom reports. To access data, you create a query that specifies: the view (profile), the start and end dates, and the dimensions and metrics that make up the column headers in the table. This query is sent to the Core Reporting API and The Core Reporting API returns all the data in the form of a table.</p>
+<h5 id="2-3-1-Build-a-Core-Reporting-API-query"><a href="#2-3-1-Build-a-Core-Reporting-API-query" class="headerlink" title="2.3.1 Build a Core Reporting API query"></a>2.3.1 Build a Core Reporting API query</h5><p>The analytics service object contains a method to build a Core Reporting API query.</p>
+<p>​       Below is an example to get the data we want.</p>
+<p><img src="RS-Movie  Report.assets/clip_image011.jpg" alt="img"></p>
+<h5 id="2-3-2-Execute-the-query"><a href="#2-3-2-Execute-the-query" class="headerlink" title="2.3.2 Execute the query"></a>2.3.2 Execute the query</h5><p><img src="RS-Movie  Report.assets/clip_image013.jpg" alt="img"></p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HttpResponse response = apiQuery.executeUnparsed()<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<h5 id="2-3-3-Working-with-the-API-results"><a href="#2-3-3-Working-with-the-API-results" class="headerlink" title="2.3.3 Working with the API results"></a>2.3.3 Working with the API results</h5><p>If the Core Reporting API query was successful, the API returns with the Analytics reporting data as well as other related information about the data. We could then use our data as an input of recommendation system</p>
+<h3 id="3-Deploy-the-application-on-the-“Could-“"><a href="#3-Deploy-the-application-on-the-“Could-“" class="headerlink" title="3.Deploy the application on the “Could “"></a>3.Deploy the application on the “Could “</h3><p><em>Cloud Compute Service (ECS) is a simple, efficient, safe and reliable computing service with flexible processing power. Its management method is simpler and more efficient than physical servers. Users can quickly create or release any number of cloud servers without purchasing hardware in advance.</em></p>
+<h4 id="1-Choose-appropriate-cloud-server"><a href="#1-Choose-appropriate-cloud-server" class="headerlink" title="1.   Choose appropriate cloud server"></a>1.   Choose appropriate cloud server</h4><h5 id="1-1-Choose-the-Right-Service"><a href="#1-1-Choose-the-Right-Service" class="headerlink" title="1.1 Choose the Right Service"></a>1.1 Choose the Right Service</h5><p>Generally, cloud service types are divided into three categories, namely Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). These three cloud computing services are sometimes called cloud computing stacks because they build stacks and they are located on top of each other. The following is an overview of these three services:</p>
+<p>\1. Infrastructure as a Service IaaS) </p>
+<p>Infrastructure as a Service is one of the main service categories, which provides virtualized computing resources such as virtual machines, storage, networks and operating systems to individuals or organizations of cloud computing providers. [6] </p>
+<p>\2. Platform as a Service (PaaS) </p>
+<p>Platform as a Service is a service category that provides developers with a platform to build applications and services through the global Internet. Paas provides an on-demand development environment for developing, testing, and managing software applications. [6] </p>
+<p>\3. Software as a Service (SaaS) </p>
+<p>Software as a Service is also a category of its services. It provides on-demand software payment applications through the Internet. Cloud computing providers host and manage software applications and allow their users to connect to applications and access applications through the global Internet.</p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image002.jpg" alt="img"></p>
+<p>Based On the understanding and for the convience of deployment,we ‘d like to choose Paas service.</p>
+<h5 id="1-2-Choose-the-appropriate-Supplier"><a href="#1-2-Choose-the-appropriate-Supplier" class="headerlink" title="1.2 Choose the appropriate Supplier"></a>1.2 Choose the appropriate Supplier</h5><p>In china. There are a lots of cloud server suppliers including Aliyun tencentYun ,ChinaCache, wangsuScience and so on ,which are very popular .</p>
+<p>Technical Indicator for choosing on supplier:   </p>
+<p>Stable operation, good cost performance, flexibility and convenience, wide node coverage, guaranteed quality, rich industry experience and commendable service consciousness, </p>
+<p>According to official data from Gomez, <em>a global third-party speed measuring company, when the page is loaded for more than 7 seconds, 50% of users will choose to give up, and every additional delay of 1 second will bring about a 7% drop in the conversion rate.</em> In general, the total loading time of 100K web page materials is less than 250ms, which is considered as high-quality CDN.<br> The delay can be subdivided into four modules: <strong>domain name resolution time, connection establishment time, first package time and content download time.</strong></p>
+<p>-        <strong>Domain name resolution time</strong>, this time dimension has a certain degree of relationship with CDN. Newly purchased domain names usually take a long time to resolve, sometimes exceeding 300ms or even reaching a few seconds. When the access bandwidth of the website exceeds 100M, the time will be smoothly controlled at 100 ~ 150ms. In addition, the length of time is also related to the local DNS caching policy of each province. </p>
+<p>-        <strong>The time to establish a connection</strong> refers to the time from the completion of DNS resolution to the establishment of a TCP connection after the corresponding IP is found. Since the TCP establishment process is a fixed three-way handshake, this time can reflect the node resources and scheduling capability of CDN services, and the closer the node is, the shorter the connection establishment time is, generally within tens of ms. </p>
+<p>-        <strong>The first packet time</strong> reflects the code capability of CDN service node programs. How long will the server program schedule processing after connection? If the time is too high, it is likely to lead to too high machine load. </p>
+<p>-        <strong>Content download time,</strong> the download of small files has little influence, mainly media files such as MP4, FlV, MKV, WMV and other audio and video files have great influence, but the main core business of this application does not include video and audio download and play, so it is not considered.</p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image004.jpg" alt="img" style="zoom: 80%;"></p>
+<p>We select Aliyun ECS Server for the below Advantages: </p>
+<p>u  Stability: instance availability reaches 99.95%, cloud disk data reliability is not less than 99.9999999%, automatic downtime migration, automatic snapshot backup and data recovery are more convenient; </p>
+<p>u  Flexibility: Free configuration of CPU, memory and bandwidth, upgrade at any time, no loss of upgrade configuration data, controllable business suspension time; </p>
+<p>u  High security: provide DDoS protection, Trojan horse detection and killing, anti-violence cracking and other services free of charge, which can easily realize multi-user access control to multi-server; </p>
+<p>u  Low cost: high cost performance, support annual and monthly charging or charging by volume, meet different needs, do not need maintenance such as server network and hardware, and have zero cost operation and maintenance; </p>
+<p>u  Ease of use: Rich operating systems and application software can be easily deployed with one key through mirror image, and the same mirror image can quickly copy the environment in multiple ECS and easily expand. </p>
+<p>u  Scalability: ECS can seamlessly connect with various rich cloud products of Aliyun, and can continuously provide complete computing, storage, security and other solutions for business development.</p>
+<p>Based on our website backend architecture(soa).we choose the product below which is provided by aLiYun.</p>
+<h5 id="1-3-Introduction-to-EDAS-of-AliYun"><a href="#1-3-Introduction-to-EDAS-of-AliYun" class="headerlink" title="1.3 Introduction to EDAS of AliYun"></a>1.3 Introduction to EDAS of AliYun</h5><p><img src="RS-Movie Ver2 Report.assets/clip_image006.jpg" alt="img" style="zoom:50%;"></p>
+<p>EDAS (Enterprise Distributed Application Service) is a PaaS platform for application hosting and micro-service management. It provides full stack solutions such as application development, deployment, monitoring, operation and maintenance. It also supports micro-service operating environments such as Apache Dubbo and Spring Cloud to help your applications easily go to the cloud.</p>
+<p>u  Can quickly build applications based on mature micro-service frameworks: build micro-service applications on the cloud with Ali’s proven micro-service framework HSF. </p>
+<p>u  Apache Dubbo and Spring Cloud: There is no need to build self-built services on which micro-services such as ZooKeeper, Eureka and Consul depend, greatly reducing operation and maintenance costs. </p>
+<p>u  Meet the requirements of enterprise-level advanced features: built-in enterprise-level advanced features such as gray scale publishing, flow control and environmental isolation.</p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image008.jpg" alt="img" style="zoom:50%;"></p>
+<h4 id="2-Deploy-our-SOA-Website-on-the-EDAS-server"><a href="#2-Deploy-our-SOA-Website-on-the-EDAS-server" class="headerlink" title="2.   Deploy our SOA Website on the EDAS server"></a>2.   Deploy our SOA Website on the EDAS server</h4><p>We select the following way to deploy our application onto the EDAS</p>
+<p>There are three types of java Application can be deployed on the EDAS .There is one type which we have satisfied  :Spring Cloud, Dubbo, normal Java Web or Spring MVC applications, and have not used Pandora or Pandora Boot, need to choose a standard Java application running environment when deploying through JAR packages.</p>
+<p>2.1 </p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image010.jpg" alt="img" style="zoom:50%;"></p>
+<p>We choose the left approach to deploy which is more convenient .</p>
+<h5 id="2-1Creating-an-application-in-an-ECS-cluster"><a href="#2-1Creating-an-application-in-an-ECS-cluster" class="headerlink" title="2.1Creating an application in an ECS cluster"></a>2.1Creating an application in an ECS cluster</h5><ol>
+<li>Log in to the EDAS console. </li>
+<li>Select Application Management &gt; Application List in the left navigation<br>bar. </li>
+<li>Click Create Application in the upper left corner of the Application List<br>Application List page. </li>
+<li>By default, the new version of the application creation page will be<br>entered. For the operation steps of the new version of the application<br>creation, please refer to the introduction of quickly creating Demo<br>micro-service application. This article introduces the creation and application<br>of the old version. </li>
+<li>Click in the upper right corner of the Create Application page to switch<br>back to the old version. </li>
+<li>In the application basic information page for creating the application<br>process, enter the application basic information, and then click next to enter<br>the application deployment configuration page </li>
+</ol>
+<p>·         </p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image012.jpg" alt="img" style="zoom: 67%;"></p>
+<h5 id="2-2Creating-Instance"><a href="#2-2Creating-Instance" class="headerlink" title="2.2Creating Instance"></a>2.2Creating Instance</h5><p>\1. On the Application Configuration page, follow the page instructions to add an instance, and click OK to create when you are finished.</p>
+<p>\2. After adding the instance, open the Deploy Now switch, set the deployment parameters, and then click OK to create.</p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image014.jpg" alt="img" style="zoom:67%;"></p>
+<h5 id="2-3-Configure-Public-Network-Load-Balancing-and-Access-Applications"><a href="#2-3-Configure-Public-Network-Load-Balancing-and-Access-Applications" class="headerlink" title="2.3 Configure Public Network Load Balancing and Access Applications"></a>2.3 Configure Public Network Load Balancing and Access Applications</h5><p>Since the published application is created in a proprietary network, if there is no special configuration, the application does not have a public network IP address, and the public network load balancing is configured, so as to distribute the access traffic of the application to ECS instances according to the forwarding policy, enhance the service capability of the application, and improve the availability of the application.</p>
+<h4 id><a href="#" class="headerlink" title></a><img src="RS-Movie Ver2 Report.assets/clip_image016.jpg" alt="img" style="zoom: 50%;"></h4><h4 id="3-Scaled-The-application-in-the-ECS-cluster-resiliently"><a href="#3-Scaled-The-application-in-the-ECS-cluster-resiliently" class="headerlink" title="3. Scaled The application in the ECS cluster resiliently"></a>3. Scaled The application in the ECS cluster resiliently</h4><p>- Background </p>
+<p>Flexible expansion and contraction is a very important operation and maintenance capability. Elastic expansion and contraction can sense the state of each instance in the application and dynamically realize the expansion and contraction of the application according to the state. While ensuring the quality of service, the availability rate of applications is improved.</p>
+<p>Flexible expansion and contraction includes automatic expansion and contraction, and expansion rules or contraction rules can be configured separately.</p>
+<p>1, login EDAS console.</p>
+<p>\2. In the left navigation bar select administration &gt; application list, in the application list page click the name of the specific application.</p>
+<p>3, the application details page in the left navigation bar, click the elastic scaling.</p>
+<p>\4. Click the expansion rules on the right side of the switch, and enable the expansion rules. </p>
+<p>5, expansion and configuration rule parameters, and then click save.. Sources (for instance the Docker application).</p>
+<p>Existing resources: automatic expansion will select a specified number of free from the current application in the cluster expansion to the application of ECS instance and expanded into the application for expansion in ECS automatic deployment, start, good application,</p>
+<p>Elastic resources: automatically add capacity using the ECS provides elastic scaling function and use the existing ECS (ESS) instance configuration or ECS start template to buy ECS and automatically to join the application of EDAS cluster (ECS) or Swarm clusters, expanded into the application, and in expansion into application for expansion in the ECS automatic deployment</p>
+<p><img src="RS-Movie Ver2 Report.assets/clip_image018.jpg" alt="img" style="zoom: 50%;"></p>
+<h1 id="Ch-VII-User-Guide"><a href="#Ch-VII-User-Guide" class="headerlink" title="Ch VII . User Guide"></a>Ch VII . User Guide</h1><p>\1.         Open a browser, enter the website”<a href="https://www.movie.xyz”" target="_blank" rel="noopener">https://www.movie.xyz”</a>, you can see the login page</p>
+<p>​                                                      <img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image002-1585835501911.gif" alt="New Mockup 4"></p>
+<p>\2.         You can enter your username and password, press “log in” button. Then you go to the home page (jump to 7.)</p>
+<p>\3.         If you have no account, you can sign up for one, press “sign up” button, then you can see this page:</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image004-1585835501911.gif" alt="New Mockup 4 copy"></p>
+<p>\4.         Enter your username, password of the account that you want create. Press next button</p>
+<p>\5.         In order to know your taste of movies, the web page will constantly give you some movies and waiting for you to rate. You can click the stars to evaluate the movie. If you have not seen that movie or you have no idea, you can click “not seen” button.</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image006-1585835501911.gif" alt="New Mockup 5"></p>
+<p>\6.         After you have rated 10 or more movies, the page will change to home page. Or if you don’t want wasting time rating, you can click the “Good Movie” title, it also can bring you to home page:</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image008.gif" alt="New Mockup 1"></p>
+<p>\7.         In home page, there are 3 parts you can interact with:  </p>
+<p>l  Search bar(jump to 8.)</p>
+<p>l  Movies recommended to you(jump to 11.)</p>
+<p>l  Top 20 popular movies(jump to )</p>
+<p>\8.         You can input some key words(tags, genres etc.) into the search bar, click “recommend” button.</p>
+<p>\9.         Then the web page gives you a list of movies recommend to you according to the key words.</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image010.gif" alt="New Mockup 3"></p>
+<p>\10.      You can click one of them, then you will find the details of that movie.</p>
+<p><img src="RS-Movie Ver.3,1 Report  目录版.assets/clip_image012.gif" alt="New Mockup 4"></p>
+<p>\11.      You can click one of the movies recommended to you on the page, then you can get the details of that movie</p>
+<p>\12.      You can click one of the top 20 popular movies, then you can get the details of that movie.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p>[1]<a href="https://baike.baidu.com/item/MVC%E6%A1%86%E6%9E%B6/9241230?fromtitle=mvc&amp;fromid=85990&amp;fr=aladdin#6_1](https://baike.baidu.com/item/MVC框架/9241230?fromtitle=mvc&amp;fromid=85990&amp;fr=aladdin#6_1)" target="_blank" rel="noopener">https://baike.baidu.com/item/MVC%E6%A1%86%E6%9E%B6/9241230?fromtitle=mvc&amp;fromid=85990&amp;fr=aladdin#6_1](https://baike.baidu.com/item/MVC框架/9241230?fromtitle=mvc&amp;fromid=85990&amp;fr=aladdin#6_1)</a> baidu ：MVC Framework</p>
+<p>[2] <a href="https://baike.baidu.com/item/mahout/8457919?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/mahout/8457919?fr=aladdin</a> baidu：Mahout</p>
+<p>[3] <a href="https://www.jianshu.com/p/56999f2b8e3b" target="_blank" rel="noopener">https://www.jianshu.com/p/56999f2b8e3b</a> Redis Introduction</p>
+<p>[4] <a href="https://baike.baidu.com/item/Neo4j/9952114?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/Neo4j/9952114?fr=aladdin</a> baidu: Neo4j</p>
+<p>[5] <a href="https://baike.baidu.com/item/spring cloud/20269825?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/spring%20cloud/20269825?fr=aladdin</a> baidu: Spring Cloud </p>
+<p>[6] Fei Tian, Bin Gao, Qing Cui, Enhong Chen, and TieYan Liu. Learning deep representations for graph clustering. In AAAI, pages 1293–1299, 2014.</p>
+<p>[7] Miao Xu, Rong Jin, and Zhi-Hua Zhou. Speedup matrix completion with side information: Application to multi-label learning. In Advances in Neural Information Processing Systems, pages 2301–2309, 2013.</p>
+<p>[8] Yin Zheng, Bangsheng Tang, Wenkui Ding, and Hanning Zhou. A neural autoregressive approach to collaborative filtering. In Proceedings of the 33nd International Conference on Machine Learning, pages 764–773, 2016.</p>
+<p>[9] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473, 2014.</p>
+<p>[10] Joan Bruna, Wojciech Zaremba, Arthur Szlam, and Yann LeCun. Spectral networks and locally connected networks on graphs. arXiv preprint arXiv:1312.6203, 2013.</p>
+<p>[11] Emmanuel Candes and Benjamin Recht. Exact matrix completion via convex optimization. Communications of the ACM, 55(6):111–119, 2012.</p>
+<p>[12] W. Yih, X. He, C. Meek. 2014. Semantic Parsing for Single-Relation Question Answering. In Proceedings of ACL 2014.</p>
+<p>[13] 视界云.国内比较好的云服务提供商有哪些？[EB/OL].<a href="https://www.zhihu.com/question/19823152.2018-01-03" target="_blank" rel="noopener">https://www.zhihu.com/question/19823152.2018-01-03</a></p>
+<p>[14] 阿里.企业级分布式应用服务EDAS[EB/OL].<a href="https://help.aliyun.com/product/29500.html.2020-03-21" target="_blank" rel="noopener">https://help.aliyun.com/product/29500.html.2020-03-21</a></p>
+<p>[15] Google引流哥.Google Analytics：工具介绍、使用详解、应用场景[EB/OL].<a href="https://www.cifnews.com/article/52253.2020.2019-10-16" target="_blank" rel="noopener">https://www.cifnews.com/article/52253.2020.2019-10-16</a> /10:16</p>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2020/10/25/End-to-End Machine Learning with TensorFlow on GCP/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2020/10/25/hello-world/" data-toggle="tooltip" data-placement="top" title="Hello World">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://eviliclufas.github.io" target="_blank">Vellichor Kyst&#39;s Blog</a></li>
+                    
+                        <li><a href="https://weibo.com/u/5842059988?from=feed&amp;loc=at&amp;nick=Vellichor%E7%9A%84%E5%B0%9A%E7%A4%BC%E7%A4%BC" target="_blank">Lover : Vellichor的尚礼礼 的微博</a></li>
+                    
+                        <li><a href="https://weibo.com/6558983506/profile?topnav=1&amp;wvr=6" target="_blank">微博 ：Vellichor-Kyst</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                        <li><a href="#" target="_blank">Example Friends</a></li>
+                    
+                        <li><a href="#" target="_blank">It helps SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "hexo-theme-huxblog";
+    var disqus_identifier = "http://yoursite.com/2020/10/25/RS-Movie Ver.4 Report  目录加参考文献版/";
+    var disqus_url = "http://yoursite.com/2020/10/25/RS-Movie Ver.4 Report  目录加参考文献版/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/Vellichor-Kyst">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/EvilicLufas">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/GAO GE">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Vellichor Kyst 2020 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

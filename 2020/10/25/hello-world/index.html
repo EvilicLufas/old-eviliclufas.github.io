@@ -13,11 +13,11 @@
 
     <title>
         
-          Git的使用 - Vellichor Kyst 的博客 | Vellichor Kyst&#39;s Blog
+          Hello World - Vellichor Kyst 的博客 | Vellichor Kyst&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/2019/11/12/Git的使用/">
+    <link rel="canonical" href="http://yoursite.com/2020/10/25/hello-world/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -166,11 +166,11 @@
                     <div class="tags">
                         
                     </div>
-                    <h1>Git的使用</h1>
+                    <h1>Hello World</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by Vellichor on
-                        2019-11-12
+                        2020-10-25
                     </span>
                 </div>
             </div>
@@ -189,62 +189,15 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><h2 id="I-使用Git-amp-GitHubRepo-amp-Typora构建笔记"><a href="#I-使用Git-amp-GitHubRepo-amp-Typora构建笔记" class="headerlink" title="I. 使用Git&amp;GitHubRepo&amp;Typora构建笔记"></a>I. 使用Git&amp;GitHubRepo&amp;Typora构建笔记</h2><h5 id="1-在typora偏好设置中选中存入图片复制到assets文件夹中"><a href="#1-在typora偏好设置中选中存入图片复制到assets文件夹中" class="headerlink" title="1.在typora偏好设置中选中存入图片复制到assets文件夹中"></a>1.在typora偏好设置中选中存入图片复制到assets文件夹中</h5><p>并且设置为<strong>优先使用相关路径</strong>（负责在Github中Typora仍然无法顺利显示图片）</p>
-<blockquote>
-<h6 id><a href="#" class="headerlink" title></a><img src="Git的使用.assets/1570787625890.png" alt="1570787625890"></h6></blockquote>
-<h5 id="2-在整个存放TyporaNote与Assets的文件夹外建立git"><a href="#2-在整个存放TyporaNote与Assets的文件夹外建立git" class="headerlink" title="2.在整个存放TyporaNote与Assets的文件夹外建立git"></a>2.在整个存放TyporaNote与Assets的文件夹外建立git</h5><p>安装git之后右键文件夹打开git bash here</p>
-<p><img src="Git的使用.assets/1570785291509.png" alt="1570785291509"></p>
-<p>使用git时,先设置</p>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;git config --<span class="keyword">global</span> user.name <span class="string">"Eviliclufas"</span></span><br><span class="line">&gt;git config --<span class="keyword">global</span> user.email <span class="string">"123@outlook.com"</span></span><br><span class="line">&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; </span><br><span class="line">&gt; git init</span><br><span class="line">&gt; git add README.md</span><br><span class="line">&gt; git commit -m <span class="string">"first commit"</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h5 id="3-在github建立新仓库"><a href="#3-在github建立新仓库" class="headerlink" title="3.在github建立新仓库"></a>3.在github建立新仓库</h5><p><img src="Git的使用.assets/1570785378922.png" alt="1570785378922"></p>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;git remote add origin https://github.com/EvilicLufas/TyporaAssets.git</span><br><span class="line">&gt;git push -u origin master</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>至此你的Typora笔记以及Assets文件夹都已经上传到了github的仓库里</p>
-<p><img src="Git的使用.assets/1570785581460.png" alt="1570785581460"></p>
-<h5 id="4-该过程中可能出现的问题（在Github创建库时不要选择创建readme）"><a href="#4-该过程中可能出现的问题（在Github创建库时不要选择创建readme）" class="headerlink" title="4.该过程中可能出现的问题（在Github创建库时不要选择创建readme）"></a>4.该过程中可能出现的问题（在Github创建库时不要选择创建readme）</h5><blockquote>
-<p>git pull 失败 ,提示：<code>fatal: refusing to merge unrelated histories</code></p>
-<p>其实这个问题是因为 两个 根本不相干的 git 库， 一个是本地库， 一个是远端库， 然后本地要去推送到远端， 远端觉得这个本地库跟自己不相干， 所以告知无法合并</p>
-<p>具体的方法， 一个种方法： 是 从远端库拉下来代码 ， 本地要加入的代码放到远端库下载到本地的库， 然后提交上去 ， 因为这样的话， 你基于的库就是远端的库， 这是一次<a href="https://www.centos.bz/tag/update/" target="_blank" rel="noopener">update</a>了</p>
-<p>第二种方法：<br>使用这个强制的方法</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>后面加上 <code>--allow-unrelated-histories</code> ， 把两段不相干的 分支进行强行合并</p>
-<p>后面再push就可以了 <code>git push gitlab master:init</code></p>
-<p>gitlab是别名 ， 使用</p>
-<p>Java代码</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; git remote add gitlab ssh:<span class="regexp">//</span>xzh@<span class="number">192.168</span>.<span class="number">1.91</span>:<span class="number">50022</span><span class="regexp">/opt/gi</span>trepo<span class="regexp">/withholdings/</span>WithholdingTransaction`</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>master是本地的branch名字<br>init是远端要推送的branch名字</p>
-<p>本地必须要先add ，<a href="https://www.centos.bz/tag/commit/" target="_blank" rel="noopener">commit</a>完了 才能推上去</p>
-<p>关于这个问题，可以参考http://<a href="https://www.centos.bz/2018/03/git-出现-fatal-refusing-to-merge-unrelated-histories-错误/#" target="_blank" rel="noopener">stack</a>overflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories。</p>
-<p>在进行git pull 时，添加一个可选项</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h5 id="5-git-init-之后选择隐藏的项目-才能看到-git文件夹"><a href="#5-git-init-之后选择隐藏的项目-才能看到-git文件夹" class="headerlink" title="5.git init 之后选择隐藏的项目 才能看到.git文件夹"></a>5.git init 之后选择隐藏的项目 才能看到.git文件夹</h5><blockquote>
-<p><img src="Git的使用.assets/1570785929130.png" alt="1570785929130"></p>
-</blockquote>
-<h2 id="II-使用Git更新项目到本地仓库"><a href="#II-使用Git更新项目到本地仓库" class="headerlink" title="II. 使用Git更新项目到本地仓库"></a>II. 使用Git更新项目到本地仓库</h2><h5 id="1-使用git-fetch更新，相当于是从远程获取最新版本到本地，不会自动merge"><a href="#1-使用git-fetch更新，相当于是从远程获取最新版本到本地，不会自动merge" class="headerlink" title="1.使用git fetch更新，相当于是从远程获取最新版本到本地，不会自动merge"></a>1.使用git fetch更新，相当于是从远程获取最新版本到本地，不会自动merge</h5><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git fetch origin <span class="literal">master</span></span><br><span class="line">git log -p <span class="literal">master</span>..origin/<span class="literal">master</span></span><br><span class="line">git merge origin/<span class="literal">master</span></span><br></pre></td></tr></table></figure>
-<p>首先从远程的origin的master主分支下载最新的版本到origin/master分支上<br>然后比较本地的master分支和origin/master分支的差别<br>最后进行合并<br>上述过程其实可以用以下更清晰的方式来进行:</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch <span class="built_in">origin</span> master:tmp</span><br><span class="line">git <span class="built_in">diff</span> tmp </span><br><span class="line">git merge tmp</span><br></pre></td></tr></table></figure>
-<p>从远程获取最新的版本到本地的tmp分支上<br>之后再进行比较合并</p>
-<h5 id="2-使用git-pull-更新，相当于是从远程获取最新版本并merge到本地"><a href="#2-使用git-pull-更新，相当于是从远程获取最新版本并merge到本地" class="headerlink" title="2.使用git pull 更新，相当于是从远程获取最新版本并merge到本地"></a>2.使用git pull 更新，相当于是从远程获取最新版本并merge到本地</h5><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin <span class="literal">master</span></span><br></pre></td></tr></table></figure>
-<p>上述命令其实相当于git fetch 和 git merge<br>在实际使用中，git fetch更安全一些<br>因为在merge前，我们可以查看更新情况，然后再决定是否合并</p>
-<h2 id="III-本地改动导致git-pull出现Error解决方法"><a href="#III-本地改动导致git-pull出现Error解决方法" class="headerlink" title="III. 本地改动导致git pull出现Error解决方法"></a>III. 本地改动导致git pull出现Error解决方法</h2><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">From https://github.com/EvilicLufas/TyporaAssets</span><br><span class="line"> * branch            master     -&gt; FETCH_HEAD</span><br><span class="line">   278ba10..83d7801  master     -&gt; origin/master</span><br><span class="line"><span class="keyword">error: </span>Your local changes to the following files would be overwritten by merge:</span><br><span class="line">        typoraNote/待办事项（2019<span class="string">-10</span><span class="string">-10</span>  到   10 <span class="string">-28</span>）.md</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br><span class="line">Aborting</span><br><span class="line">Updating f90196a..83d7801</span><br></pre></td></tr></table></figure>
-<p> 通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash pop将之前本地做的修改应用到当前工作区。</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br><span class="line">git pull</span><br><span class="line">git stash <span class="keyword">pop</span></span><br></pre></td></tr></table></figure>
-<p>git stash: 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。</p>
-<p>git pull:拉取服务器上的代码；</p>
-<p>git stash pop: 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。</p>
-<p>git stash list: 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。</p>
-<p>git stash clear: 清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了。</p>
+                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
 
                 <hr>
@@ -254,12 +207,12 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/2019/11/21/How to train your Deep Neural Network/" data-toggle="tooltip" data-placement="top" title="How to train your Deep Neural Network">&larr; Previous Post</a>
+                            <a href="/2020/10/25/RS-Movie Ver.4 Report  目录加参考文献版/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
                         </li>
                     
                     
                         <li class="next">
-                            <a href="/2019/10/11/Gossip算法的研究与实现(multi-thread)/" data-toggle="tooltip" data-placement="top" title="Gossip算法的研究与实现(Multi-thread using Java)">Next Post &rarr;</a>
+                            <a href="/2019/12/18/RASD-Final/" data-toggle="tooltip" data-placement="top" title="RASD Final">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -332,8 +285,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "hexo-theme-huxblog";
-    var disqus_identifier = "http://yoursite.com/2019/11/12/Git的使用/";
-    var disqus_url = "http://yoursite.com/2019/11/12/Git的使用/";
+    var disqus_identifier = "http://yoursite.com/2020/10/25/hello-world/";
+    var disqus_url = "http://yoursite.com/2020/10/25/hello-world/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
